@@ -1,6 +1,7 @@
 import React from 'react'
 import Icon from '../src/components/Icon'
 import Taskbar from './components/Taskbar'
+import './styles/style.css';
 
 function App() {
   return (
@@ -12,4 +13,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

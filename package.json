@@ -15,8 +15,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-webpack": "webpack --config prod.config.js",
     "test": "react-scripts test",
-    "scss": "node-sass --watch public/sass -o public/styles",
+    "scss": "node-sass --watch src/sass -o src/styles",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -33,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.1.3"
   }
 }

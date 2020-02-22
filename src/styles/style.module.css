@@ -1,7 +1,15 @@
 html {
   background-color: #3eceb6; }
 
-.icon {
+.taskbar {
+  height: 40px;
+  background-color: silver;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-top: ridge 2px white;
+  z-index: 99;
   display: inline-block;
   padding: 10px;
   width: 50px;
@@ -16,16 +24,6 @@ html {
   overflow: hidden;
   width: 50px;
   height: 40px; }
-
-.taskbar {
-  height: 40px;
-  background-color: silver;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  border-top: ridge 2px white;
-  z-index: 99; }
 
 #start-button {
   background-size: 30px 25px;

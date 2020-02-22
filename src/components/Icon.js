@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
+
 class Icon extends Component {
 
     constructor(props) {
