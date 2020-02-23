@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import '../styles/startButton.css';
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
@@ -17,7 +18,7 @@ class StartButton extends Component {
             <div 
                 onClick={this.handleClick} 
                 id="start-button" 
-                className={this.state.isPressed ? "taskbar-icon-rest": "taskbar-icon-clicked"}
+                className={this.state.isPressed ? "start-button-click": "start-button-rest"}
             >
                 Start
             </div>

@@ -17,8 +17,7 @@
     "build": "react-scripts build",
     "build-webpack": "webpack --config prod.config.js",
     "test": "react-scripts test",
-    "scss": "node-sass --watch src/sass -o src/styles",
-    "eject": "react-scripts eject"
+    "scss": "node-sass --watch src/sass -o src/styles"
   },
   "eslintConfig": {
     "extends": "react-app"
