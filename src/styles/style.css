@@ -1,3 +1,7 @@
+@font-face {
+  font-famly: 'MS Sans Serif';
+  src: url("../../public/fonts/MS_Sans_Serif.ttf"); }
+
 html {
   background-color: #3eceb6; }
 
