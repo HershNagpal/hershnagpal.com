@@ -1,13 +1,16 @@
 import React from 'react'
 import Icon from '../src/components/Icon'
 import Taskbar from './components/Taskbar'
-import './styles/style.css';
+import data from './data'
+import './styles/style.css'
 
 function App() {
+  const iconData = data
   return (
     <div className="App">
-      <Icon iconImage={"/images/icons/txt.png"} iconText={"textxtxtxtxtxtxt.txt"} />
-      <Icon iconImage={"/images/icons/doc.png"} iconText={"text.pdf"} />
+      {iconData.map((icon, key) => (
+        <Icon key={key} iconText={icon.title} iconImage={icon.icon} link={icon.link} />
+      ))}
       <Taskbar/>
     </div>
   )
