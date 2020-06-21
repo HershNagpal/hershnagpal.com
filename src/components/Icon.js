@@ -21,6 +21,8 @@ class Icon extends Component {
                 return DocumentIcon;
             case "text":
                 return TextIcon;
+            default:
+                return TextIcon;
         }
     }
 

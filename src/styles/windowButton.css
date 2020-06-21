@@ -1,0 +1,16 @@
+.buttonContainer {
+    display: inline-block;
+}
+
+button {
+    background:#C0C0C0;
+    border-width: 1px;
+    border-color :#FFFFFF #808080 #808080 #FFFFFF;
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "ms-sans";
+    text-align: center;
+}

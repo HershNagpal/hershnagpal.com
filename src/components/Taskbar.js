@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Task from './Task'
 import StartButton from './StartButton'
+import '../styles/taskbar.css';
 
 class Taskbar extends Component {
 

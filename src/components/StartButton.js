@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import '../styles/startButton.css';
-import ReactDOM from 'react-dom'
 
 class StartButton extends Component {
 
