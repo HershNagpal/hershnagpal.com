@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "ms-sans";
+  src: url("../assets/fonts/MS_Sans_Serif.ttf")
+}
+
 .icon {
   display: inline-block;
   padding: 10px;
@@ -14,6 +19,10 @@
 }
 
 .icon-text {
+  font-family: "ms-sans";
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
   display: inline-block;
   position: relative;
   margin: 0px 0px;
