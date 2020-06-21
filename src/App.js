@@ -16,7 +16,7 @@ function App() {
     //   <Icon iconImage={DocumentFileIcon} iconText={"text.pdf"} />
     <div className="App">
       {iconData.map((icon, key) => (
-        <Icon key={key} iconText={icon.title} iconImage={icon.icon} link={icon.link} />
+        <Icon key={key} iconText={icon.title} type={icon.type} link={icon.link} />
       ))}
       <Taskbar/>
     </div>

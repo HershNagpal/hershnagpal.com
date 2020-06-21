@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import '../styles/icon.css';
+import DocumentIcon from '../assets/images/icons/doc.png';
+import TextIcon from '../assets/images/icons/txt.png';
 
 
 class Icon extends Component {
@@ -14,6 +16,15 @@ class Icon extends Component {
         this.handleClick = this.handleClick.bind(this)
     }
 
+    findImageSource() {
+        switch (this.props.type) {
+            case "doc":
+                return DocumentIcon;
+            case "text":
+                return TextIcon;
+        }
+    }
+
     render() {
         return (
             <div 
@@ -21,7 +32,7 @@ class Icon extends Component {
                 onDoubleClick={this.handleClick}
             >
                 <div className="center">
-                    <img className="icon-image" alt="icon" src={this.props.iconImage} />
+                    <img className="icon-image" alt="icon" src={this.findImageSource()} />
                 </div>
                 <div className="center">
                     <p className="icon-text">{this.props.iconText}</p>

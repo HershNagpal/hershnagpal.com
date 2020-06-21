@@ -1,5 +1,6 @@
 html {
-  background-color: #3eceb6; }
+  background-color: #3eceb6; 
+}
 
 .taskbar {
   height: 40px;
@@ -9,4 +10,5 @@ html {
   left: 0px;
   right: 0px;
   border-top: ridge 2px white;
-  z-index: 99; }
+  z-index: 99; 
+}

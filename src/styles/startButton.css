@@ -9,16 +9,19 @@
   margin-left: 4px;
   margin-top: 2px;
   cursor: default;
-  user-select: none; }
+  user-select: none; 
+}
 
 .start-button-rest {
   border-top: ridge 2px white;
   border-left: ridge 2px white;
   border-bottom: ridge 2px black;
-  border-right: ridge 2px black; }
+  border-right: ridge 2px black; 
+}
 
 .start-button-click {
   border-top: inset 2px black;
   border-left: inset 2px black;
   border-bottom: inset 2px white;
-  border-right: inset 2px white; }
+  border-right: inset 2px white; 
+}
