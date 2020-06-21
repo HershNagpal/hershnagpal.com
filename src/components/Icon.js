@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import '../styles/icon.css';
 import DocumentIcon from '../assets/images/icons/doc.png';
 import TextIcon from '../assets/images/icons/txt.png';
@@ -49,12 +48,6 @@ class Icon extends Component {
         var win = window.open(url, '_blank');
         win.focus();
     }
-}
-
-Icon.propTypes = {
-    iconImage: PropTypes.string,
-    iconText: PropTypes.string,
-    link: PropTypes.string,
 }
 
 export default Icon

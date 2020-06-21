@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import Task from './Task'
 import StartButton from './StartButton'
 
@@ -22,10 +21,6 @@ class Taskbar extends Component {
             </div>
         )
     }
-}
-
-Taskbar.propTypes = {
-    tasks: PropTypes.array
 }
 
 export default Taskbar

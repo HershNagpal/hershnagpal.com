@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const Task = (props) => {
     return (
@@ -10,11 +9,6 @@ const Task = (props) => {
             <p class="task-text">{props.taskText}</p>
         </div>
     )
-}
-
-Task.propTypes = {
-    taskImage: PropTypes.string,
-    taskText: PropTypes.string
 }
 
 export default Task
