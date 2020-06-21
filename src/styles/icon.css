@@ -1,15 +1,30 @@
 .icon {
   display: inline-block;
   padding: 10px;
-  width: 50px;
-  height: 70px; }
+  width: 100px;
+  height: 100px; 
+  /* border: 3px solid #00AD21; */
+}
 
 .icon-image {
-  padding: 6px; }
+  padding: 6px;
+  width: auto;
+  height: 60px;
+  /* border: 3px solid #73A0f1; */
+}
 
 .icon-text {
+  display: inline-block;
+  position: relative;
   margin: 0px 0px;
   white-space: nowrap;
   overflow: hidden;
   width: 50px;
-  height: 40px; }
+  height: 20px; 
+  /* border: 3px solid #ffAD21; */
+}
+
+.center {
+  text-align: center;
+  /* border: 3px solid hsl(281, 100%, 50%); */
+}

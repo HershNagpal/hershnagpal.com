@@ -20,8 +20,12 @@ class Icon extends Component {
                 className="icon draggable"
                 onDoubleClick={this.openLink}
             >
-                <img className="icon-image" alt="icon" src={this.props.iconImage} />
-                <p className="icon-text">{this.props.iconText}</p>
+                <div className="center">
+                    <img className="icon-image" alt="icon" src={this.props.iconImage} />
+                </div>
+                <div className="center">
+                    <p className="icon-text">{this.props.iconText}</p>
+                </div>
             </div>
         )      
     }
