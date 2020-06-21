@@ -11,14 +11,14 @@ class Icon extends Component {
         this.state = {
             isPressed: false
         }
-        this.openLink = this.openLink.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
     render() {
         return (
             <div 
                 className="icon draggable"
-                onDoubleClick={this.openLink}
+                onDoubleClick={this.handleClick}
             >
                 <div className="center">
                     <img className="icon-image" alt="icon" src={this.props.iconImage} />
@@ -30,14 +30,20 @@ class Icon extends Component {
         )      
     }
 
-    openLink() {
-        
+    handleClick() {
+        this.openLink(this.props.link)
+    }
+
+    openLink(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
     }
 }
 
 Icon.propTypes = {
     iconImage: PropTypes.string,
-    iconText: PropTypes.string
+    iconText: PropTypes.string,
+    link: PropTypes.string,
 }
 
 export default Icon
