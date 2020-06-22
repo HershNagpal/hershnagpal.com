@@ -26,9 +26,11 @@ class Window extends Component {
                         <p/>
                     </div>
                     <div className="column right">
+                        <div className="buttons" style={{float: "right"}}>
                         <WindowButton type={"minimize"}/>
                         <WindowButton type={"maximize"}/>
                         <WindowButton type={"close"}/>
+                        </div>
                     </div>
                 </div>
                 <div className="">

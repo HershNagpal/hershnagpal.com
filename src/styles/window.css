@@ -1,5 +1,5 @@
 .window {
-    width:600px;
+    width: 500px;
     height: 200px;
     background:#C0C0C0;
     border-width:1px;
@@ -12,10 +12,9 @@
 .title{
     margin: 2px 0 0 2px;
     padding: 2px;
-    float: left;
     font-family: "ms-sans";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     background: #000080;
 }
@@ -45,15 +44,4 @@
 
 .middle {
     width: 50%;
-}
-
-input[type=text] {
-    width: 100%;
-    border-radius: 3px;
-    border: none;
-    background-color: white;
-    margin-top: -8px;
-    height: 16px;
-    color: #666;
-    padding: 5px;
 }

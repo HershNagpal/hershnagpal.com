@@ -3,7 +3,10 @@
   text-align: right;
   font-size: 20px;
   width: 75px;
-  height: 24px;
+  font-family: "ms-sans";
+  font-weight: bold;
+  /* height: 24px; */
+  line-height: 1.2;
   display: inline-block;
   padding: 5px 4px 0px 1px;
   margin-left: 4px;
