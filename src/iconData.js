@@ -1,20 +1,23 @@
+import txtImage from './assets/images/icons/txt.png'
+import pdfImage from './assets/images/icons/doc.png'
+
 export const iconData = [
     {
+        id: "1",
         title: "text.txt",
         type: "text",
         link: "http://google.com",
-        icon: "/assets/images/icons/txt.png",
-        intTaskbar: "true",
-        windowOpen: "true",
     },
     {
+        id: "2",
         title: "doc.pdf",
         type: "doc",
         link: "http://google.com",
-        icon: "/assets/images/icons/doc.png",
-        inTaskbar: "true",
-        windowOpen: "false",
     },
 ]
 
-export default iconData
+export const iconImageMap = [
+    null,
+    txtImage,
+    pdfImage,
+]

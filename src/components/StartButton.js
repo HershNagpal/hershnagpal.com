@@ -1,33 +1,19 @@
-import React, {Component} from 'react'
+import React from 'react'
 import '../styles/startButton.css';
 
-class StartButton extends Component {
+export const StartButton = () => {
 
-    constructor() {
-        super()
-        this.state = {
-            isPressed: false
-        }
-        this.handleClick = this.handleClick.bind(this)
-    }
+    const [isPressed, updateIsPressed] = React.useState(false);
 
-    render() {
-        return (
-            <div 
-                onClick={this.handleClick} 
-                id="start-button" 
-                className={this.state.isPressed ? "start-button-click": "start-button-rest"}
-            >
-                Start
-            </div>
-        )   
-    }
-
-    handleClick() {
-        this.setState(state => ({
-            isPressed: !state.isPressed
-        }));
-    }
+    const handleClick = () => updateIsPressed(!isPressed)
+    
+    return (
+        <div 
+            onClick={() => handleClick()} 
+            id="start-button" 
+            className={isPressed ? "start-button-click": "start-button-rest"}
+        >
+            Start
+        </div>
+    )   
 }
-
-export default StartButton
