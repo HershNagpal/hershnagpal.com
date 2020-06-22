@@ -8,3 +8,9 @@
     border-top: ridge 2px white;
     z-index: 99; 
   }
+
+.taskbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}

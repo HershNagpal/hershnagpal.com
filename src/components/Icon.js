@@ -1,12 +1,10 @@
 import React from 'react'
 import '../styles/icon.css';
-import {iconImageMap} from '../iconData'
+import {iconImageMap, findImageSource} from '../iconData'
 
 
 export const Icon = ({id, iconText, link}) => {
-
-    const findImageSource = (id) => iconImageMap[id]
-
+    
     const handleClick = () => console.log("congrations")
 
     return (

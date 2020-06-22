@@ -1,18 +1,22 @@
 #start-button {
-  background-size: 30px 25px;
+  float: left;
   text-align: right;
   font-size: 20px;
   width: 75px;
   font-family: "ms-sans";
   font-weight: bold;
-  /* height: 24px; */
   line-height: 1.2;
-  display: inline-block;
-  padding: 5px 4px 0px 1px;
-  margin-left: 4px;
-  margin-top: 2px;
-  cursor: default;
+  padding: 2px 4px 3px 1px;
+  margin: 2px 4px;
+  margin-right: 6px; 
   user-select: none; 
+}
+
+.start-image {
+  height: 20px;
+  width: auto;
+  margin: 2px;
+  float: left;
 }
 
 .start-button-rest {

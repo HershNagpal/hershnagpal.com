@@ -2,6 +2,7 @@ import txtImage from './assets/images/icons/txt.png'
 import pdfImage from './assets/images/icons/doc.png'
 
 export const iconData = [
+    null,
     {
         id: "1",
         title: "text.txt",
@@ -16,8 +17,10 @@ export const iconData = [
     },
 ]
 
-export const iconImageMap = [
+const iconImageMap = [
     null,
     txtImage,
     pdfImage,
 ]
+
+export const findImageSource = (id) => iconImageMap[id]

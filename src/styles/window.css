@@ -2,14 +2,15 @@
     width: 500px;
     height: 200px;
     background:#C0C0C0;
-    border-width:1px;
+    border-width:2px;
     border-color:#FFFFFF #808080 #808080 #FFFFFF;
     border-style:solid;
     top:10%;
     left:25%;
     padding:1px;
+    z-index: 10;
 }
-.title{
+.title {
     margin: 2px 0 0 2px;
     padding: 2px;
     font-family: "ms-sans";
