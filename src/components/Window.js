@@ -2,8 +2,15 @@ import React from 'react'
 import '../styles/window.css';
 import WindowButton from './WindowButton';
 import MenuBar from './MenuBar';
+import {iconData, findImageSource} from '../iconData' 
 
-export const Window = () => {
+export const Window = ({taskbarState, updateTaskbar, id}) => {
+
+    // taskbarState.find((task) => task.id === id)
+
+    // if (!taskbarState[id].windowIsOpen) {
+    //     return null
+    // }
 
     return (
         <div 
@@ -11,7 +18,7 @@ export const Window = () => {
         >
             <div className="row">
                 <div className="column left">
-                    <p className="title">text.txt - Notepad</p>
+                    <p className="title">{iconData[id].title}</p>
                 </div>
                 <div className="column middle">
                     <p/>
@@ -29,5 +36,4 @@ export const Window = () => {
             </div>
         </div>
     )
-    
 }

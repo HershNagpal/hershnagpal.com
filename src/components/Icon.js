@@ -1,11 +1,30 @@
 import React from 'react'
 import '../styles/icon.css';
-import {findImageSource} from '../iconData'
+import {findImageSource, iconData} from '../iconData'
 
 
-export const Icon = ({id, iconText, link}) => {
+export const Icon = ({id, link, taskbarState, updateTaskbar}) => {
     
-    const handleClick = () => console.log("congrations")
+    const handleClick = () => {
+        const itemIndex = taskbarState.findIndex((task) => task.id === id)
+        const thisIconInTaskbar = (-1 != itemIndex)
+        const windowIsOpen = thisIconInTaskbar ? taskbarState[itemIndex].windowIsOpen 
+            : false
+
+        if (thisIconInTaskbar) {
+            if (!windowIsOpen){
+            console.log("Open Window") 
+            // TODO: open window
+            }
+        } else {
+            updateTaskbar([...taskbarState,
+                {
+                  id: id,
+                  windowIsOpen: "true",
+                },
+            ])
+        }
+    }
 
     return (
         <div 
@@ -13,10 +32,10 @@ export const Icon = ({id, iconText, link}) => {
             onDoubleClick={() => handleClick()}
         >
             <div className="center">
-                <img className="icon-image" alt="icon" src={findImageSource(id)} />
+                <img className="icon-image" alt="icon" src={findImageSource(id)}/>
             </div>
             <div className="center">
-                <p className="icon-text">{iconText}</p>
+                <p className="icon-text">{iconData[id].title}</p>
             </div>
         </div>
     )      

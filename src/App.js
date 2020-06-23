@@ -16,9 +16,23 @@ function App() {
   return (
     <div className="App">
       {icons.map((icon, index) => (
-        index===0 ? null : <Icon key={index} iconText={icon.title} id={icon.id} link={icon.link} />
+        index===0 ? null : 
+          <Icon 
+          key={index}
+          id={icon.id}
+          taskbarState={taskbarState}
+          updateTaskbar={updateTaskbar}
+          />
       ))}
-      <Window/>
+      {taskbarState.map((task, index) => (
+          <Window
+            key={index}
+            id={task.id}
+            taskbarState={taskbarState}
+            updateTaskbar={updateTaskbar}
+          />
+      ))}
+      
       <Taskbar updateTaskbar={updateTaskbar} taskbarState={taskbarState} />
     </div>
   )
