@@ -2,7 +2,6 @@ import React from 'react'
 import {StartButton} from './StartButton'
 import '../styles/taskbar.css';
 import {Task} from './Task'
-import {iconData, iconImageMap} from '../iconData'
 
 export const Taskbar = ({updateTaskbar, taskbarState}) => {
 
@@ -11,9 +10,9 @@ export const Taskbar = ({updateTaskbar, taskbarState}) => {
             className="taskbar"
         >
             <StartButton/>
-                {taskbarState.map((taskID, index) => (
+                {taskbarState.map((task, index) => (
                     // this p tag works but its  feet under the taskbar
-                   <Task key={index} id={taskID}/>
+                    <Task key={index} id={task.id} updateTaskbarState={updateTaskbar} />
                 ))}
         </div>
     )

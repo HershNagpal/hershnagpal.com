@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/icon.css';
-import {iconImageMap, findImageSource} from '../iconData'
+import {findImageSource} from '../iconData'
 
 
 export const Icon = ({id, iconText, link}) => {

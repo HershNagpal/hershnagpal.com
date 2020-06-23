@@ -5,9 +5,11 @@
     /* border: 3px solid #00AD21; */
     min-width: 150px;
     margin: 2px 4px;
+    padding-top: 2px;
     text-align: left;
     font-size: 20px;
     font-family: "ms-sans";
+    user-select: none; 
 }
 
 .unopen {
@@ -15,25 +17,26 @@
     border-left: ridge 2px white;
     border-bottom: ridge 2px black;
     border-right: ridge 2px black;
-}
+} 
+
 .open {
     border-top: inset 2px black;
     border-left: inset 2px black;
     border-bottom: inset 2px white;
     border-right: inset 2px white;
 }
-.task-icon {
-    /* display: none; */
-    /* max-width: 200px; */
-    /* min-width: 75px; */
-    /* width: 10%; */
-    height: 24px;
-    display: inline-block;
-    padding: 5px 4px 0px 27px;
-    margin-left: 4px;
-    margin-top: 2px;
-    /* cursor: default; */
-    text-overflow: ellipsis;
-    /* user-select: none; */
-    
+
+.task-image {
+    user-select: none;
+    height: 20px;
+    width: auto;
+    margin: 2px;
+    margin-right: 6px;
+    float: left;
+}
+
+.task:after {
+    content: "";
+    display: table;
+    clear: both;
 }
