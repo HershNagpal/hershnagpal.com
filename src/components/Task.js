@@ -14,6 +14,7 @@ export const Task = ({id, taskbarState, updateTaskbar}) => {
         ))
     ) // Split into separate functions
     
+    
     return (
         <div
             className={isWindowOpen(id, taskbarState) ? "task open": "task unopen"}
