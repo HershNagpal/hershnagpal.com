@@ -7,6 +7,7 @@ export const Task = ({id, taskbarState}) => {
     const [isPressed, updateIsPressed] = React.useState(false);
     const handleClick = () => updateIsPressed(!isPressed) // TODO
     
+    
     return (
         <div
             className={isPressed ? "task open": "task unopen"}

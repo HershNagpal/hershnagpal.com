@@ -6,11 +6,11 @@ import {iconData, findImageSource} from '../iconData'
 
 export const Window = ({taskbarState, updateTaskbar, id}) => {
 
-    // taskbarState.find((task) => task.id === id)
+    const thisWindowsTask = taskbarState.find((task) => task.id === id)
 
-    // if (!taskbarState[id].windowIsOpen) {
-    //     return null
-    // }
+    if (!thisWindowsTask.windowIsOpen) {
+        return null
+    }
 
     return (
         <div 
