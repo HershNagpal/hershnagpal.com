@@ -12,7 +12,7 @@ export const Taskbar = ({updateTaskbar, taskbarState}) => {
             <StartButton/>
                 {taskbarState.map((task, index) => (
                     // this p tag works but its  feet under the taskbar
-                    <Task key={index} id={task.id} updateTaskbarState={updateTaskbar} taskbarState={taskbarState} />
+                    <Task key={index} id={task.id} updateTaskbar={updateTaskbar} taskbarState={taskbarState} />
                 ))}
         </div>
     )

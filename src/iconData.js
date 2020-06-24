@@ -4,13 +4,13 @@ import pdfImage from './assets/images/icons/doc.png'
 export const iconData = [
     null,
     {
-        id: "1",
+        id: 1,
         title: "text.txt",
         type: "text",
         link: "http://google.com",
     },
     {
-        id: "2",
+        id: 2,
         title: "doc.pdf",
         type: "doc",
         link: "http://google.com",
