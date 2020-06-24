@@ -1,4 +1,5 @@
 .window {
+    position: absolute;
     width: 500px;
     height: 200px;
     background:#C0C0C0;
@@ -9,13 +10,21 @@
     left:25%;
     padding:1px;
     z-index: 10;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
 }
+
+.buttons {
+    float: right;
+}
+
 .title {
     margin: 2px 0 0 2px;
     padding: 2px;
     font-family: "ms-sans";
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     background: #000080;
 }
