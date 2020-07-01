@@ -12,7 +12,7 @@ phases:
   pre_build:
     commands:
       # install dependencies
-      - yarn
+      - yarn install
   
   build:
     commands:
