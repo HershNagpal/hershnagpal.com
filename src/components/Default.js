@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Default = (props) => {
+export const Default = ({}) => {
     return (
         <div>
 
         </div>
     )
 }
-
-export default Default

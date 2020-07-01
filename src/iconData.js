@@ -11,7 +11,7 @@ export const iconData = [
         id: 1,
         title: "about.txt",
         type: "text",
-        content: "http://google.com",
+        content: "",
     },
     {
         id: 2,

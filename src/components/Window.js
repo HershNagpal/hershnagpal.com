@@ -3,11 +3,22 @@ import '../styles/window.css';
 import {WindowButton} from './WindowButton';
 import {MenuBar} from './MenuBar';
 import {isWindowOpen} from '../taskbarState'
+import {WelcomeMessage} from './WelcomeMessage'
 import {iconData, findImageSource} from '../iconData'
 import Draggable from 'react-draggable';  
+import {Resume} from './Resume';
 
 export const Window = ({taskbarState, updateTaskbar, id}) => {
     if (!isWindowOpen(id, taskbarState)) return null
+
+    const popupType = () => {
+        switch (iconData[id].type) {
+            case "pdf":
+                return <Resume id={id}/>
+            default:
+                return <WelcomeMessage/>
+        }
+    }
 
     return (
         <Draggable>
@@ -16,10 +27,10 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
             >
                 <div className="row">
                     <div className="column left">
-                        <p className="title">{iconData[id].title}</p>
+                        <img className="window-image" src={findImageSource(id)}/>
                     </div>
                     <div className="column middle">
-                        <p/>
+                        <p className="title">{iconData[id].title}</p>
                     </div>
                     <div className="column right">
                         <div className="buttons">
@@ -48,22 +59,8 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                     <MenuBar className="menuBar" type={"txt"}/>
                 </div>
                 <div class="popup-text">
-                        <h3> Welcome</h3>
-                        <p>This is where I experiment with web design and have fun making ridiculous ideas come to life.</p>
-                        <h3>What's New?</h3>
-                        <ul>
-                            <li>Taskbar and '_' buttons can now be used to minimize</li>
-                            <li>IE links open a new tab when double-clicked</li>
-                            <li>Clicking on windows, their icons, or taskbar icons focuses them</li>
-                        </ul>
-                        <h3>Planned Features:</h3>
-                        <ul>
-                            <li><strong>Moving this party to React.js</strong></li>
-                            <p>In light of the fact that React is <strong>very nice</strong>, I'm in the process of remaking this site.</p>
-                        </ul>
-
-                        <button class="close-popup">OK</button>
-                    </div>
+                    {popupType()}
+                </div>
             </div>
         </Draggable>
     )

@@ -50,7 +50,7 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
 
     return (
         <div 
-            className="icon draggable"
+            className="icon"
             onDoubleClick={() => handleDoubleClick()}
             onClick={() => handleClick()}
         >

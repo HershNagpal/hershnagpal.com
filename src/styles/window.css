@@ -27,6 +27,7 @@
     font-size: 16px;
     color: white;
     background: #000080;
+    display: inline-block;
 }
 
 .row {
@@ -45,7 +46,8 @@
 }
 
 .left {
-    width: 25%;
+    width: 8%;
+    text-align: center;
 }
 
 .right {
@@ -53,7 +55,7 @@
 }
 
 .middle {
-    width: 50%;
+    width: 67%;
 }
 
 .popup-text{
@@ -79,4 +81,17 @@
     display:block;
     position:relative;
     bottom:0px;
+}
+
+.window-image {
+    user-select: none;
+    height: 20px;
+    vertical-align: middle;
+    /* width: auto; */
+}
+
+.window-image:after {
+    content: "";
+    display: table;
+    clear: both;
 }
