@@ -12,14 +12,14 @@ phases:
   pre_build:
     commands:
       # install dependencies
-      - yarn install
+      - npm install
   
   build:
     commands:
       # tests
 
       # builds
-      - yarn build
+      - npm build
 
 artifacts:
   files:
