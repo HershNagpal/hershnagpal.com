@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - choco feature enable -n allowGlobalConfirmation
       # install Node
       - cinst nodejs
       # install Yarn
