@@ -1,21 +1,21 @@
 import React from 'react'
 import '../styles/menuBar.css';
 
-const menuBarTypeText = (type) => {
-    switch (type) {
-        case "txt":
-            return ["File","Edit","View","Insert","Format","Help",]
-        default:
-            return ["File","Edit","View","Help",]
-    }
-}
+export const MenuBar = ({type}) => {
 
-const MenuBar = (props) => {
+    const menuBarTypeText = (type) => {
+        switch (type) {
+            case "txt":
+                return ["File","Edit","View","Insert","Format","Help",]
+            default:
+                return ["File","Edit","View","Help",]
+        }
+    }
 
     return (
         <div className="menuBar">
             {
-                menuBarTypeText(props.type).map(str => {
+                menuBarTypeText(type).map(str => {
                     return(
                     <span>{str}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     )
@@ -24,5 +24,3 @@ const MenuBar = (props) => {
         </div>
     )
 }
-
-export default MenuBar

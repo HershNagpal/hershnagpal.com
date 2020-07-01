@@ -1,26 +1,37 @@
 import txtImage from './assets/images/icons/txt.png'
 import pdfImage from './assets/images/icons/doc.png'
+import ieImage from './assets/images/icons/ie.png'
+import folderImage from './assets/images/icons/folder.png'
+import aboutImage from './assets/images/icons/about.png'
+import resume from './assets/content/HNagpal-Resume.pdf'
 
 export const iconData = [
     null,
     {
         id: 1,
-        title: "text.txt",
+        title: "about.txt",
         type: "text",
-        link: "http://google.com",
+        content: "http://google.com",
     },
     {
         id: 2,
-        title: "doc.pdf",
-        type: "doc",
-        link: "http://google.com",
+        title: "resume.pdf",
+        type: "pdf",
+        content: resume,
+    },
+    {
+        id: 3,
+        title: "linkedin.com",
+        type: "ie",
+        content: "https://www.linkedin.com/in/hershnagpal/",
     },
 ]
 
 const iconImageMap = [
     null,
-    txtImage,
+    aboutImage,
     pdfImage,
+    ieImage,
 ]
 
 export const findImageSource = (id) => iconImageMap[id]

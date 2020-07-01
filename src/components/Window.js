@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/window.css';
-import WindowButton from './WindowButton';
-import MenuBar from './MenuBar';
+import {WindowButton} from './WindowButton';
+import {MenuBar} from './MenuBar';
 import {isWindowOpen} from '../taskbarState'
 import {iconData, findImageSource} from '../iconData'
 import Draggable from 'react-draggable';  

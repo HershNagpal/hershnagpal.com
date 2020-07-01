@@ -20,10 +20,10 @@ function App() {
       {icons.map((icon, index) => (
         index===0 ? null : 
           <Icon 
-          key={index}
-          id={icon.id}
-          taskbarState={taskbarState}
-          updateTaskbar={updateTaskbar}
+            key={index}
+            id={icon.id}
+            taskbarState={taskbarState}
+            updateTaskbar={updateTaskbar}
           />
       ))}
       {taskbarState.map((task, index) => (
