@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # install Node
+      - cinst nodejs
+      # install Yarn
+      - choco install yarn
+  
+  prebuild:
+    commands:
+      # install dependencies
+      - yarn
+  
+  build:
+    commands:
+      # tests
+
+      # builds
+      yarn build
+
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build
