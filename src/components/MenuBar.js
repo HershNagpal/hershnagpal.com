@@ -16,9 +16,9 @@ const MenuBar = (props) => {
         <div className="menuBar">
             {
                 menuBarTypeText(props.type).map(str => {
-                    return(`
-                        ${str}
-                    `)
+                    return(
+                    <span>{str}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    )
                 })
             }
         </div>

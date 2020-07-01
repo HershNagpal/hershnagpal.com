@@ -23,30 +23,47 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                     </div>
                     <div className="column right">
                         <div className="buttons">
-                        <WindowButton 
-                            type={"minimize"} 
-                            taskbarState={taskbarState} 
-                            updateTaskbar={updateTaskbar} 
-                            id={id}
-                        />
-                        <WindowButton 
-                            type={"maximize"} 
-                            taskbarState={taskbarState} 
-                            updateTaskbar={updateTaskbar} 
-                            id={id}
-                        />
-                        <WindowButton 
-                            type={"close"} 
-                            taskbarState={taskbarState} 
-                            updateTaskbar={updateTaskbar} 
-                            id={id}
-                        />
+                            <WindowButton 
+                                type={"minimize"} 
+                                taskbarState={taskbarState} 
+                                updateTaskbar={updateTaskbar} 
+                                id={id}
+                            />
+                            <WindowButton 
+                                type={"maximize"} 
+                                taskbarState={taskbarState} 
+                                updateTaskbar={updateTaskbar} 
+                                id={id}
+                            />
+                            <WindowButton 
+                                type={"close"} 
+                                taskbarState={taskbarState} 
+                                updateTaskbar={updateTaskbar} 
+                                id={id}
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="">
                     <MenuBar className="menuBar" type={"txt"}/>
                 </div>
+                <div class="popup-text">
+                        <h3> Welcome</h3>
+                        <p>This is where I experiment with web design and have fun making ridiculous ideas come to life.</p>
+                        <h3>What's New?</h3>
+                        <ul>
+                            <li>Taskbar and '_' buttons can now be used to minimize</li>
+                            <li>IE links open a new tab when double-clicked</li>
+                            <li>Clicking on windows, their icons, or taskbar icons focuses them</li>
+                        </ul>
+                        <h3>Planned Features:</h3>
+                        <ul>
+                            <li><strong>Moving this party to React.js</strong></li>
+                            <p>In light of the fact that React is <strong>very nice</strong>, I'm in the process of remaking this site.</p>
+                        </ul>
+
+                        <button class="close-popup">OK</button>
+                    </div>
             </div>
         </Draggable>
     )

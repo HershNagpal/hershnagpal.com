@@ -1,7 +1,7 @@
 .window {
     position: absolute;
-    width: 500px;
-    height: 200px;
+    max-width: 80%;
+    /* height: 200px; */
     background:#C0C0C0;
     border-width:2px;
     border-color:#FFFFFF #808080 #808080 #FFFFFF;
@@ -54,4 +54,29 @@
 
 .middle {
     width: 50%;
+}
+
+.popup-text{
+    padding:13px 12px 12px;
+    height:100%;
+    width:calc(100% - 26px);
+    display:inline-block;
+    font-family:"ms-sans";
+    font-size:16px;
+    color: black;
+}
+
+.popup-text button{
+    font-family:"ms-sans";
+    font-size:12px;
+    outline:1px solid #000000;
+    background:#C0C0C0;
+    border-width:2px;
+    border-style:solid;
+    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    padding:4px 10px;
+    margin:20px auto 3px;
+    display:block;
+    position:relative;
+    bottom:0px;
 }

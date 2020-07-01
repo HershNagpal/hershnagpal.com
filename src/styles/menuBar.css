@@ -1,5 +1,5 @@
 .menuBar {
-    /* display: inline-block; */
-    /* top: 20px; */
-    
+    font-family: "MS-sans";
+    margin: 5px;
+    margin-left: 10px;
 }
