@@ -9,7 +9,7 @@ export const iconData = [
     null,
     {
         id: 1,
-        title: "about.txt",
+        title: "welcome.txt",
         type: "text",
         content: "",
     },
@@ -29,7 +29,7 @@ export const iconData = [
 
 const iconImageMap = [
     null,
-    aboutImage,
+    txtImage,
     pdfImage,
     ieImage,
 ]

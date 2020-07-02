@@ -58,7 +58,7 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                 <div className="">
                     <MenuBar className="menuBar" type={"txt"}/>
                 </div>
-                <div class="popup-text">
+                <div class="content-box">
                     {popupType()}
                 </div>
             </div>

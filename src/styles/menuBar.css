@@ -1,5 +1,16 @@
 .menuBar {
     font-family: "MS-sans";
-    margin: 5px;
     margin-left: 10px;
+}
+
+.menubar-item {
+    margin-top: 1px;
+    
+    padding: 3px 8px 3px 5px;
+    display: inline-block;
+}
+
+.menubar-item:hover {
+    background-color:rgb(0,0,128);
+    color:white;
 }
