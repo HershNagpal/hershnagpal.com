@@ -1,7 +1,7 @@
 .window {
     position: absolute;
-    max-width: 80%;
-    max-height: 90%;
+    /* max-width: 80%; */
+    /* max-height: 90%; */
     background:#C0C0C0;
     border-width:2px;
     border-color:#FFFFFF #808080 #808080 #FFFFFF;
@@ -60,14 +60,11 @@
 }
 
 .left {
-    width: 8%;
+    width: 30px;
     text-align: center;
 }
 
 .right {
-    width: 25%;
-}
-
-.middle {
-    width: 67%;
+    width: 100px;
+    float: right;
 }

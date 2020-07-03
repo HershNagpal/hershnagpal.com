@@ -7,14 +7,20 @@ import {WelcomeMessage} from './WelcomeMessage'
 import {iconData, findImageSource} from '../iconData'
 import Draggable from 'react-draggable';  
 import {Resume} from './Resume';
+import {Projects} from './Projects';
+import {AboutMe} from './AboutMe';
 
 export const Window = ({taskbarState, updateTaskbar, id}) => {
     if (!isWindowOpen(id, taskbarState)) return null
 
     const popupType = () => {
-        switch (iconData[id].type) {
-            case "pdf":
+        switch (iconData[id].title) {
+            case "resume.pdf":
                 return <Resume id={id}/>
+            case "about me.txt":
+                return <AboutMe/>
+            case "projects.txt":
+                return <Projects/>
             default:
                 return <WelcomeMessage/>
         }

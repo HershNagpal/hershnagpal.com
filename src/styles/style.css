@@ -1,10 +1,16 @@
 * {
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 @font-face {
   font-family: "ms-sans";
   src: url("../assets/fonts/MS_Sans_Serif.ttf")
+}
+
+@font-face {
+  font-family: "fixedsys";
+  src: url("../assets/fonts/fixedsys.ttf")
 }
 
 html {
