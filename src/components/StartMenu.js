@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/startMenu.css';
+import '../styles/startMenu.css'
 
-const StartMenu = () => {
+export const StartMenu = () => {
     return (
         <div id="startMenu">
             <div id="left">
@@ -20,5 +20,3 @@ const StartMenu = () => {
         </div>
     )
 }
-
-export default StartMenu

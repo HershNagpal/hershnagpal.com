@@ -7,6 +7,3 @@ export const baseTaskbarState = [
 ]
 
 export const isWindowOpen = (id, taskbarState) => taskbarState.find((task) => task.id === id ).windowIsOpen
-
-
-// export const baseTaskbarState = [null, "1"]

@@ -1,16 +1,17 @@
 import React from 'react'
-import '../styles/window.css';
-import {WindowButton} from './WindowButton';
-import {MenuBar} from './MenuBar';
+import '../styles/window.css'
+import {iconData, findImageSource} from '../iconData'
+import {WindowButton} from './WindowButton'
+import {MenuBar} from './MenuBar'
 import {isWindowOpen} from '../taskbarState'
 import {WelcomeMessage} from './WelcomeMessage'
-import {iconData, findImageSource} from '../iconData'
-import Draggable from 'react-draggable';  
-import {Resume} from './Resume';
-import {Projects} from './Projects';
-import {AboutMe} from './AboutMe';
+import Draggable from 'react-draggable'
+import {ResizableBox} from 'react-resizable';
+import {Resume} from './Resume'
+import {Projects} from './Projects'
+import {AboutMe} from './AboutMe'
 
-export const Window = ({taskbarState, updateTaskbar, id}) => {
+export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWindowState}) => {
     if (!isWindowOpen(id, taskbarState)) return null
 
     const popupType = () => {
@@ -45,18 +46,24 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                                 taskbarState={taskbarState} 
                                 updateTaskbar={updateTaskbar} 
                                 id={id}
+                                windowState={windowState}
+                                updateWindowState={updateWindowState}
                             />
                             <WindowButton 
                                 type={"maximize"} 
                                 taskbarState={taskbarState} 
                                 updateTaskbar={updateTaskbar} 
                                 id={id}
+                                windowState={windowState}
+                                updateWindowState={updateWindowState}
                             />
                             <WindowButton 
                                 type={"close"} 
                                 taskbarState={taskbarState} 
                                 updateTaskbar={updateTaskbar} 
                                 id={id}
+                                windowState={windowState}
+                                updateWindowState={updateWindowState}
                             />
                         </div>
                     </div>

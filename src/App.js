@@ -2,9 +2,10 @@ import React from 'react'
 import {Icon} from '../src/components/Icon'
 import {Taskbar} from './components/Taskbar'
 import {Window} from './components/Window'
-import {StartMenu} from './components/StartMenu'
 import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
+import {baseWindowState} from './windowState'
+import './styles/animations.css'
 import './styles/style.css'
 import './styles/crt.css'
 import './styles/style.css'
@@ -12,11 +13,17 @@ import './styles/style.css'
 function App() {
   const icons = iconData
 
-  const [taskbarState, updateTaskbar] = React.useState(baseTaskbarState);
-  const [startMenuState, toggleStartMenu] = React.useState(false);
+  const [taskbarState, updateTaskbar] = React.useState(baseTaskbarState)
+  const [startMenuState, toggleStartMenu] = React.useState(false)
+  const [windowState, updateWindowState] = React.useState(baseWindowState)
+
+  console.log("yee")
 
   return (
     <div className="App">
+      
+      <div className="scanlines"/>
+
       {icons.map((icon, index) => (
         index===0 ? null : 
           <Icon 
@@ -27,15 +34,22 @@ function App() {
           />
       ))}
       {taskbarState.map((task, index) => (
-          <Window
-            key={index}
-            id={task.id}
-            taskbarState={taskbarState}
-            updateTaskbar={updateTaskbar}
-          />
+        <Window
+          key={index}
+          id={task.id}
+          taskbarState={taskbarState}
+          updateTaskbar={updateTaskbar}
+          windowState={windowState}
+          updateWindowState={updateWindowState}
+        />
       ))}
       
-      <Taskbar updateTaskbar={updateTaskbar} taskbarState={taskbarState} toggleStartMenu={toggleStartMenu} startMenuState={startMenuState} />
+      <Taskbar 
+        updateTaskbar={updateTaskbar} 
+        taskbarState={taskbarState} 
+        toggleStartMenu={toggleStartMenu} 
+        startMenuState={startMenuState} 
+      />
     </div>
   )
 }

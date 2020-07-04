@@ -21,7 +21,7 @@
     border-left: ridge 3px white;
     border-bottom: ridge 2px black;
     border-right: ridge 2px grey;
-    z-index: 99;
+    z-index: 11;
     cursor: default;
 }
 
@@ -34,6 +34,7 @@
     bottom: 0px;
     background-color: rgb(128,128,128);
     font-family: Arial;
+    overflow: visible;
     /* font-weight:900; */
     /* text-transform: capitalize; */
 }
@@ -63,7 +64,7 @@
     color: rgb(192,192,192);
     transform: rotateZ(-90deg);
     transform-origin: center left;
-    /* display: inline-block; */
+    display: inline-block;
     /* width: 200px; */
     white-space: nowrap;
     font-size: 20px;

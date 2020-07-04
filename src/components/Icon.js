@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/icon.css';
+import '../styles/icon.css'
 import {findImageSource, iconData} from '../iconData'
 
 
@@ -44,8 +44,8 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
     }
 
     const openLink = (link) => {
-        var win = window.open(link, '_blank');
-        win.focus();
+        var win = window.open(link, '_blank')
+        win.focus()
     }
 
     return (
@@ -58,7 +58,7 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
                 <img className="icon-image" alt="icon" src={findImageSource(id)}/>
             </div>
             <div className="center">
-                <p className="icon-text">{iconData[id].title}</p>
+                <p className="icon-text glow" data-text={iconData[id].title}>{iconData[id].title}</p>
             </div>
         </div>
     )      

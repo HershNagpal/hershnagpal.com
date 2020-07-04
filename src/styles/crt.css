@@ -145,6 +145,9 @@
     animation: flicker 0.5s infinite;
   }
   */
+
+
+  /*
   .crt::before {
     content: " ";
     display: block;
@@ -163,3 +166,4 @@
   .crt {
     animation: textShadow 1s infinite;
   }
+*/

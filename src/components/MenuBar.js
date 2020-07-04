@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/menuBar.css';
+import '../styles/menuBar.css'
 
 export const MenuBar = ({type}) => {
 

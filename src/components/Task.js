@@ -1,8 +1,7 @@
 import React from 'react'
-import '../styles/task.css';
+import '../styles/task.css'
 import {findImageSource, iconData} from '../iconData'
 import {isWindowOpen} from '../taskbarState'
-import { Icon } from './Icon';
 
 export const Task = ({id, taskbarState, updateTaskbar}) => {
     const handleClick = () => updateTaskbar(
