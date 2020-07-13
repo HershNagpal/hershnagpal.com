@@ -1,7 +1,7 @@
-import txtImage from './assets/images/icons/txt.png'
-import pdfImage from './assets/images/icons/doc.png'
-import ieImage from './assets/images/icons/ie.png'
-import folderImage from './assets/images/icons/folder.png'
+import txtImage from './assets/images/icons/text.svg'
+import pdfImage from './assets/images/icons/pdf.svg'
+import linkImage from './assets/images/icons/link.svg'
+import folderImage from './assets/images/icons/folder.svg'
 import aboutImage from './assets/images/icons/about.png'
 import resume from './assets/content/HNagpal-Resume.pdf'
 
@@ -51,8 +51,8 @@ const iconImageMap = [
     txtImage,
     txtImage,
     pdfImage,
-    ieImage,
-    ieImage,
+    linkImage,
+    folderImage,
 ]
 
 export const findImageSource = (id) => iconImageMap[id]

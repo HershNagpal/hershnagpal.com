@@ -6,8 +6,8 @@
     border-width:2px;
     border-color:#FFFFFF #808080 #808080 #FFFFFF;
     border-style:solid;
-    /* top:10%; */
-    /* left:25%; */
+    top:10%;
+    left:25%;
     z-index: 10;
     display: inline-block;
 }

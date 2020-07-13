@@ -39,10 +39,10 @@ export const WindowButton = ({type, updateTaskbar, taskbarState, id, windowState
     }
 
     const saveWindowPosition = () => {
-        const domNode = ReactDOM.findDOMNode(this);
-        domNode.getBoundingClientRect()
+        // const domNode = ReactDOM.findDOMNode(this);
+        // domNode.getBoundingClientRect()
         
-        console.log(domNode.getBoundingClientRect())
+        // console.log(domNode.getBoundingClientRect())
     }
 
     const buttonTypeText = () => {
