@@ -1,7 +1,6 @@
 .icon {
   display: inline-block;
   padding: 10px;
-  /* width: 120px; */
   height: 220px; 
   width: auto;
   text-align: center;
@@ -16,9 +15,7 @@
 }
 
 .icon-text {
-  /* font-family: "ms-sans"; */
-  font-family: lores-9-plus-narrow, sans-serif;
-  /* font-weight: bold; */
+  font-family: 'vt323';
   font-size: 24px;
   color: white;
   display: inline-block;

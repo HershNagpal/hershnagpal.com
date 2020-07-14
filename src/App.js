@@ -5,7 +5,7 @@ import {Window} from './components/Window'
 import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
 import {baseWindowState} from './windowState'
-import './styles/animations.css'
+// import './styles/animations.css'
 import './styles/style.css'
 import './styles/crt.css'
 import './styles/style.css'
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       
-      <div className="scanlines"/>
+      <div className="crt"/>
 
       {icons.map((icon, index) => (
         index===0 ? null : 

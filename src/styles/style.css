@@ -13,8 +13,24 @@
   src: url("../assets/fonts/fixedsys.ttf")
 }
 
+@font-face {
+  font-family: "reenie-beanie";
+  src: url("../assets/fonts/ReenieBeanie-Regular.ttf")
+}
+
+@font-face {
+  font-family: "vt323";
+  src: url("../assets/fonts/VT323-Regular.ttf")
+}
+
+@font-face {
+  font-family: "vcr";
+  src: url("../assets/fonts/VCR.ttf")
+}
+
 html {
   /* background-color: #3eceb6;  */
-  /* background-color: black; */
-  background-color: orange;
+  /* background-color: orange; */
+  background-image: url('../assets/images/wallpaper.png');
+  background-size: cover;
 }
