@@ -60,7 +60,7 @@ export const WindowButton = ({type, updateTaskbar, taskbarState, id, windowState
 
     return (
         <div className="buttonContainer">
-            <button onClick={() => handleClick()} className={type}>{buttonTypeText()}</button>
+            <button onClick={() => handleClick()} className={type}>{/*buttonTypeText()*/}</button>
         </div>
     )
 }

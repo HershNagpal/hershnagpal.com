@@ -14,9 +14,10 @@
     padding: 5px;
     overflow-x: auto;
     overflow-y: scroll;
-    border-top: inset 2px black;
-    border-left: inset 2px black;
-    border-bottom: inset 2px white;
-    border-right: inset 2px white;
-    font-family: 'fixedsys';
+    /* border-top: inset 2px black; */
+    /* border-left: inset 2px black; */
+    /* border-bottom: inset 2px white; */
+    /* border-right: inset 2px white; */
+    border-radius: 0px 0px 0px 10px;
+    font-family: lores-21-serif, sans-serif;
 }

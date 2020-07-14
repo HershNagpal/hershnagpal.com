@@ -10,7 +10,7 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
         
         else {
             const itemIndex = taskbarState.findIndex((task) => task.id === id)
-            const thisIconInTaskbar = (-1 != itemIndex)
+            const thisIconInTaskbar = (-1 !== itemIndex)
     
             if (!thisIconInTaskbar) {
                 updateTaskbar([...taskbarState,
@@ -25,7 +25,7 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
 
     const handleClick = () => {
         const itemIndex = taskbarState.findIndex((task) => task.id === id)
-        const thisIconInTaskbar = (-1 != itemIndex)
+        const thisIconInTaskbar = (-1 !== itemIndex)
         const windowIsOpen = thisIconInTaskbar ? taskbarState[itemIndex].windowIsOpen 
             : false
             

@@ -5,7 +5,9 @@
 button {
     background:#C0C0C0;
     border-width: 2px;
-    border-color :#FFFFFF #808080 #808080 #FFFFFF;
+    /* border-color :#FFFFFF #808080 #808080 #FFFFFF; */
+    border-color: black;
+    border-radius: 5px;
     padding: 0px;
     margin: 1px;
     width: 20px;
@@ -14,4 +16,40 @@ button {
     font-weight: bold;
     font-family: "ms-sans";
     text-align: center;
+}
+
+.close {
+    background-color: red;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.close:hover {
+    background-color: red;
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+.minimize {
+    background-color: yellow;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.minimize:hover {
+    background-color: yellow;
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+.maximize {
+    background-color: green;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.maximize:hover {
+    background-color: green;
+    opacity: 100%;
+    transition: 0.2s;
 }

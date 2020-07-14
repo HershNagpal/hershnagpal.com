@@ -1,6 +1,7 @@
 .menuItem {
-    font-family: "MS-Sans";
-    color:black;
+    /* font-family: "MS-Sans"; */
+    font-family: lores-9-plus-narrow, sans-serif;
+    color:white;
     height: 32px;
     width: 134px;
     margin-left: 24px;
@@ -14,7 +15,8 @@
     left: 2px;
     /* height: 240px; */
     /* width: 164px; */
-    background-color: rgb(192,192,192);
+    /* background-color: rgb(192,192,192); */
+    background-color: #1B0400;
     position: absolute;
     display: block;
     border-top: ridge 3px white;
@@ -32,8 +34,10 @@
     /* left: 0px; */
     top: 0px;
     bottom: 0px;
-    background-color: rgb(128,128,128);
-    font-family: Arial;
+    /* background-color: rgb(128,128,128); */
+    background-color: #1B0400;
+    /* font-family: Arial; */
+    font-family: lores-9-plus-narrow, sans-serif;
     overflow: visible;
     /* font-weight:900; */
     /* text-transform: capitalize; */
@@ -41,13 +45,13 @@
 
 #startMenu .menuItem:hover {
     background-color:rgb(0,0,128);
-    color:white;
+    /* color:black; */
 }
 
 #startMenu .expander:after{
-    content:'▶';
+    content:'>';
     float:right;
-    margin-right:10px;
+    margin-right:10px;    
 }
 
 #startMenu .menuItem:first-letter
@@ -69,7 +73,7 @@
     white-space: nowrap;
     font-size: 20px;
     margin-top: 170px;
-    margin-left: 13px;
+    margin-left: 15px;
 }
 
 .num95 {

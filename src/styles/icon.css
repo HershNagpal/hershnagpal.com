@@ -10,15 +10,16 @@
 
 .icon-image {
   padding: 6px;
-  height: 120px;
+  height: 100px;
   width: auto;
   /* border: 3px solid #73A0f1; */
 }
 
 .icon-text {
-  font-family: "ms-sans";
-  font-weight: bold;
-  font-size: 32px;
+  /* font-family: "ms-sans"; */
+  font-family: lores-9-plus-narrow, sans-serif;
+  /* font-weight: bold; */
+  font-size: 24px;
   color: white;
   display: inline-block;
   position: relative;

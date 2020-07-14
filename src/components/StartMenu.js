@@ -6,7 +6,7 @@ export const StartMenu = () => {
         <div id="startMenu">
             <div id="left">
                 <div class="b">
-                    Windows
+                    Hersh Nagpal
                     <span class="num95">95</span>
                 </div>
             </div>

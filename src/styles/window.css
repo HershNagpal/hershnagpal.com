@@ -2,14 +2,16 @@
     position: absolute;
     /* max-width: 80%; */
     /* max-height: 90%; */
-    background:#C0C0C0;
-    border-width:2px;
-    border-color:#FFFFFF #808080 #808080 #FFFFFF;
-    border-style:solid;
+    background: #1b0400;
+    border-width: 5px;
+    /* border-color:#FFFFFF #808080 #808080 #FFFFFF; */
+    /* border-color: black; */
+    border-style: solid;
     top:10%;
     left:25%;
     z-index: 10;
     display: inline-block;
+    border-radius: 2px 15px;
 }
 
 .buttons {
@@ -17,13 +19,15 @@
 }
 
 .title {
+    height: 24px;
     margin: 2px 0 0 2px;
     padding: 2px;
-    font-family: "ms-sans";
-    font-weight: bold;
-    font-size: 16px;
+    /* font-family: "ms-sans"; */
+    font-family: lores-9-plus-narrow, sans-serif;
+    /* font-weight: bold; */
+    font-size: 20px;
     color: white;
-    background: #000080;
+    /* background: #000080; */
     display: inline-block;
 }
 
@@ -46,7 +50,7 @@
 
 .row {
     padding: 2px;
-    background: #000080;
+    background: #1B0400;
 }
 
 .row:after {
@@ -62,9 +66,12 @@
 .left {
     width: 30px;
     text-align: center;
+    vertical-align: middle;
+    padding-top: 3px;
 }
 
 .right {
     width: 100px;
     float: right;
+    padding-top: 3px;
 }

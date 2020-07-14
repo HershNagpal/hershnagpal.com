@@ -52,7 +52,7 @@ const iconImageMap = [
     txtImage,
     pdfImage,
     linkImage,
-    folderImage,
+    linkImage,
 ]
 
 export const findImageSource = (id) => iconImageMap[id]
