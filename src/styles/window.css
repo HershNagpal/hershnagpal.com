@@ -1,17 +1,12 @@
 .window {
     position: absolute;
-    /* max-width: 80%; */
-    /* max-height: 90%; */
     background: #1b0400;
     border-width: 5px;
-    /* border-color:#FFFFFF #808080 #808080 #FFFFFF; */
-    /* border-color: black; */
     border-style: solid;
     top:10%;
     left:25%;
     z-index: 10;
     display: inline-block;
-    /* border-radius: 2px 15px; */
 }
 
 .buttons {

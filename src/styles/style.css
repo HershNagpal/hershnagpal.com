@@ -29,14 +29,12 @@
 }
 
 .backgroundImage {
-  /* background-color: #3eceb6;  */
-  background-color: orange;
   position: fixed;
-  /* background-image: url('../assets/images/bliss.png'); */
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
-  min-width: 1000px;
+  min-width: 900px;
+  min-height: 1000px;
   z-index: -1;
 }

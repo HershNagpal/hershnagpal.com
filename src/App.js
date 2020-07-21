@@ -9,7 +9,7 @@ import './styles/animations.css'
 import './styles/style.css'
 import './styles/crt.css'
 import './styles/style.css'
-import background from './assets/images/bliss.png'
+import background from './assets/images/blisscompress.jpg'
 
 function App() {
   const icons = iconData
@@ -26,6 +26,7 @@ function App() {
       <div className="crt"/>
       <img src={background} className="backgroundImage"/>
       <div className="blackScreen"/>
+      <div className="flicker"/>
       <div className="whiteScreen"/>
 
       {icons.map((icon, index) => (

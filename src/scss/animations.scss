@@ -46,6 +46,18 @@
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: both;
+}
+
+.flicker {
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 100%;
+    pointer-events: none;
     animation: flicker 0.15s infinite;
 }
 
@@ -63,8 +75,4 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-fill-mode: both;
-}
-
-html {
-    
 }

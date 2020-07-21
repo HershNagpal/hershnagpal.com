@@ -4,19 +4,17 @@
   height: 220px; 
   width: auto;
   text-align: center;
-  /* border: 3px solid #00AD21; */
 }
 
 .icon-image {
   padding: 6px;
   height: 100px;
   width: auto;
-  /* border: 3px solid #73A0f1; */
 }
 
 .icon-text {
   font-family: 'vt323';
-  font-size: 28px;
+  font-size: 32px;
   color: white;
   display: inline-block;
   position: relative;
@@ -24,14 +22,11 @@
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  /* text-shadow: -2px 2px 2px black; */
-  /* height: 24px;  */
   text-align: center;
-  /* border: 3px solid #ffAD21; */
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
-@supports (-webkit-text-stroke: 1px black) {
-  .icon-text {
-    -webkit-text-stroke: 0.5px black;
-  }
-}
