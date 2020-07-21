@@ -5,7 +5,7 @@ import {Window} from './components/Window'
 import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
 import {baseWindowState} from './windowState'
-// import './styles/animations.css'
+import './styles/animations.css'
 import './styles/style.css'
 import './styles/crt.css'
 import './styles/style.css'
@@ -25,6 +25,8 @@ function App() {
       
       <div className="crt"/>
       <img src={background} className="backgroundImage"/>
+      <div className="blackScreen"/>
+      <div className="whiteScreen"/>
 
       {icons.map((icon, index) => (
         index===0 ? null : 
@@ -35,6 +37,7 @@ function App() {
             updateTaskbar={updateTaskbar}
           />
       ))}
+      
       {taskbarState.map((task, index) => (
         <Window
           key={index}
