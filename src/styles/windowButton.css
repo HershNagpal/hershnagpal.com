@@ -3,19 +3,15 @@
 }
 
 button {
-    background:#C0C0C0;
-    border-width: 2px;
-    /* border-color :#FFFFFF #808080 #808080 #FFFFFF; */
-    border-color: black;
+    border-width: 0px;
     border-radius: 5px;
-    padding: 0px;
-    margin: 1px;
+    margin: 3px;
     width: 20px;
     height: 20px;
     font-size: 16px;
     font-weight: bold;
-    font-family: "ms-sans";
-    text-align: center;
+    /* font-family: "ms-sans"; */
+    /* text-align: center; */
 }
 
 .close {

@@ -9,6 +9,7 @@ import {baseWindowState} from './windowState'
 import './styles/style.css'
 import './styles/crt.css'
 import './styles/style.css'
+import background from './assets/images/bliss.png'
 
 function App() {
   const icons = iconData
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       
       <div className="crt"/>
+      <img src={background} className="backgroundImage"/>
 
       {icons.map((icon, index) => (
         index===0 ? null : 

@@ -28,9 +28,15 @@
   src: url("../assets/fonts/VCR.ttf")
 }
 
-html {
+.backgroundImage {
   /* background-color: #3eceb6;  */
-  /* background-color: orange; */
-  background-image: url('../assets/images/wallpaper.png');
-  background-size: cover;
+  background-color: orange;
+  position: fixed;
+  /* background-image: url('../assets/images/bliss.png'); */
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  min-width: 1000px;
+  z-index: -1;
 }
