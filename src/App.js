@@ -5,10 +5,9 @@ import {Window} from './components/Window'
 import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
 import {baseWindowState} from './windowState'
-// import './styles/animations.css'
+import './styles/animations.css'
 import './styles/style.css'
 import './styles/crt.css'
-import './styles/style.css'
 
 function App() {
   const icons = iconData
@@ -23,7 +22,8 @@ function App() {
     <div className="App">
       
       <div className="crt"/>
-
+      <div className="blackScreen"/>
+      <div className="whiteScreen"/>
       {icons.map((icon, index) => (
         index===0 ? null : 
           <Icon 
