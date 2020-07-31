@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/window.css'
-import '../styles/windowButton.css'
 import {iconData, findImageSource} from '../iconData'
 import {WindowButton} from './WindowButton'
 import {MenuBar} from './MenuBar'

@@ -1,6 +1,5 @@
 import ReactDOM from 'react'
 import React from 'react'
-import '../styles/windowButton.css'
 
 export const WindowButton = ({type, updateTaskbar, taskbarState, id, windowState, updateWindowState}) => {
 
