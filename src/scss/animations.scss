@@ -34,7 +34,7 @@
 .blackScreen {
     background-color: black;
     position: fixed;
-    z-index: 100;
+    z-index: 99;
     height: 100%;
     width: 100%;
     top: 0px;
@@ -72,7 +72,7 @@
     opacity: 100%;
     pointer-events: none;
     animation: whiteScreenStartup;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: both;
 }

@@ -25,8 +25,8 @@ function App() {
       
       <div className="crt"/>
       <img src={background} className="backgroundImage"/>
-      <div className="blackScreen"/>
-      <div className="flicker"/>
+      <div className="blackScreen"></div>
+      <div className="flicker"></div>
       <div className="whiteScreen"/>
 
       {icons.map((icon, index) => (

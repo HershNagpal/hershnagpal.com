@@ -15,52 +15,52 @@
 
 @keyframes flicker {
   0% {
-    opacity: 0.00765; }
+    opacity: 0.01396; }
   5% {
-    opacity: 0.02258; }
+    opacity: 0.06208; }
   10% {
-    opacity: 0.05819; }
+    opacity: 0.05908; }
   15% {
-    opacity: 0.06178; }
+    opacity: 0.03956; }
   20% {
-    opacity: 0.01969; }
+    opacity: 0.02969; }
   25% {
-    opacity: 0.03915; }
+    opacity: 0.06599; }
   30% {
-    opacity: 0.03793; }
+    opacity: 0.05632; }
   35% {
-    opacity: 0.0577; }
+    opacity: 0.06661; }
   40% {
-    opacity: 0.067; }
+    opacity: 0.02706; }
   45% {
-    opacity: 0.00972; }
+    opacity: 0.0099; }
   50% {
-    opacity: 0.04802; }
+    opacity: 0.01177; }
   55% {
-    opacity: 0.05523; }
+    opacity: 0.04067; }
   60% {
-    opacity: 0.06761; }
+    opacity: 0.01413; }
   65% {
-    opacity: 0.02513; }
+    opacity: 0.03248; }
   70% {
-    opacity: 0.04583; }
+    opacity: 0.05593; }
   75% {
-    opacity: 0.02449; }
+    opacity: 0.01669; }
   80% {
-    opacity: 0.04535; }
+    opacity: 0.00313; }
   85% {
-    opacity: 0.0227; }
+    opacity: 0.03292; }
   90% {
-    opacity: 0.02596; }
+    opacity: 0.05147; }
   95% {
-    opacity: 0.06289; }
+    opacity: 0.0637; }
   100% {
-    opacity: 0.04888; } }
+    opacity: 0.06316; } }
 
 .blackScreen {
   background-color: black;
   position: fixed;
-  z-index: 100;
+  z-index: 99;
   height: 100%;
   width: 100%;
   top: 0px;
@@ -71,7 +71,18 @@
   animation-delay: 1s;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.flicker {
+  background-color: black;
+  position: fixed;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 100%;
+  pointer-events: none;
   animation: flicker 0.15s infinite; }
 
 .whiteScreen {
@@ -85,6 +96,6 @@
   opacity: 100%;
   pointer-events: none;
   animation: whiteScreenStartup;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-fill-mode: both; }

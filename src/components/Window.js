@@ -1,12 +1,12 @@
 import React from 'react'
 import '../styles/window.css'
+import '../styles/windowButton.css'
 import {iconData, findImageSource} from '../iconData'
 import {WindowButton} from './WindowButton'
 import {MenuBar} from './MenuBar'
 import {isWindowOpen} from '../taskbarState'
 import {WelcomeMessage} from './WelcomeMessage'
 import Draggable from 'react-draggable'
-import {ResizableBox} from 'react-resizable';
 import {Resume} from './Resume'
 import {Projects} from './Projects'
 import {AboutMe} from './AboutMe'
