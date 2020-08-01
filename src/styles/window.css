@@ -1,7 +1,13 @@
 .window {
     position: absolute;
-    background: #1b0400;
-    border-width: 5px;
+    padding: 3px;
+    /* background: #1b0400; */
+    background: #2e5fbb;
+    border-bottom: #22375e;
+    border-right: #22375e;
+    border-top: white;
+    border-left: white;
+    border-width: 3px;
     border-style: solid;
     top:10%;
     left:25%;
@@ -40,7 +46,8 @@
 
 .row {
     padding: 2px;
-    background: #1B0400;
+    /* background: #1B0400; */
+    
 }
 
 .row:after {

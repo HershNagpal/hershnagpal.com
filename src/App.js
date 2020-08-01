@@ -23,11 +23,11 @@ function App() {
   return (
     <div className="App">
       
-      <div className="crt"/>
+      <div id="crt"/>
       <img src={background} alt="" className="backgroundImage"/>
-      <div className="blackScreen"></div>
-      <div className="flicker"></div>
-      <div className="whiteScreen"/>
+      <div id="blackScreen"/>
+      <div id="flicker"/>
+      <div id="whiteScreen"/>
 
       {icons.map((icon, index) => (
         index===0 ? null : 

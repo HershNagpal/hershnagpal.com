@@ -6,8 +6,8 @@ export const StartMenu = () => {
         <div id="startMenu">
             <div id="left">
                 <div class="b">
-                    Hersh Nagpal
-                    <span class="num95">95</span>
+                    Hersh Nagpal 
+                    <span class="num95"> 98</span>
                 </div>
             </div>
             <div class="menuItem expander">Documents</div>

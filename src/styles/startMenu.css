@@ -16,13 +16,13 @@
     /* height: 240px; */
     /* width: 164px; */
     /* background-color: rgb(192,192,192); */
-    background-color: #1B0400;
+    background-color: #2e5fbb;
     position: absolute;
     display: block;
     border-top: ridge 3px white;
     border-left: ridge 3px white;
-    border-bottom: ridge 2px black;
-    border-right: ridge 2px grey;
+    border-bottom: ridge 2px rgb(12, 5, 77);
+    border-right: ridge 2px rgb(12, 5, 77);
     z-index: 11;
     cursor: default;
 }
@@ -35,7 +35,7 @@
     top: 0px;
     bottom: 0px;
     /* background-color: rgb(128,128,128); */
-    background-color: #1B0400;
+    /* background-color: #1B0400; */
     /* font-family: Arial; */
     font-family: lores-9-plus-narrow, sans-serif;
     overflow: visible;

@@ -31,7 +31,7 @@
   }
 }
   
-.blackScreen {
+#blackScreen {
     background-color: black;
     position: fixed;
     z-index: 99;
@@ -48,7 +48,7 @@
     animation-fill-mode: both;
 }
 
-.flicker {
+#flicker {
     background-color: black;
     position: fixed;
     z-index: 100;
@@ -61,7 +61,7 @@
     animation: flicker 0.15s infinite;
 }
 
-.whiteScreen {
+#whiteScreen {
     background-color: white;
     position: fixed;
     z-index: 100;

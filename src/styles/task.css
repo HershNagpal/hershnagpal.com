@@ -17,13 +17,13 @@
 .unopen {
     border-top: ridge 2px white;
     border-left: ridge 2px white;
-    border-bottom: ridge 2px black;
-    border-right: ridge 2px black;
+    border-bottom: ridge 2px rgb(12, 5, 77);
+    border-right: ridge 2px rgb(12, 5, 77);
 } 
 
 .open {
-    border-top: inset 2px black;
-    border-left: inset 2px black;
+    border-top: inset 2px rgb(12, 5, 77);
+    border-left: inset 2px rgb(12, 5, 77);
     border-bottom: inset 2px white;
     border-right: inset 2px white;
 }

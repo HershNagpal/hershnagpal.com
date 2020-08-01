@@ -15,49 +15,49 @@
 
 @keyframes flicker {
   0% {
-    opacity: 0.04582; }
+    opacity: 0.02873; }
   5% {
-    opacity: 0.03834; }
+    opacity: 0.0452; }
   10% {
-    opacity: 0.01454; }
+    opacity: 0.0138; }
   15% {
-    opacity: 0.01679; }
+    opacity: 0.03314; }
   20% {
-    opacity: 0.03931; }
+    opacity: 0.02626; }
   25% {
-    opacity: 0.00341; }
+    opacity: 0.01401; }
   30% {
-    opacity: 0.01391; }
+    opacity: 0.01074; }
   35% {
-    opacity: 0.00008; }
+    opacity: 0.00565; }
   40% {
-    opacity: 0.02206; }
+    opacity: 0.0134; }
   45% {
-    opacity: 0.04708; }
+    opacity: 0.00137; }
   50% {
-    opacity: 0.00419; }
+    opacity: 0.04958; }
   55% {
-    opacity: 0.03285; }
+    opacity: 0.00073; }
   60% {
-    opacity: 0.03158; }
+    opacity: 0.03004; }
   65% {
-    opacity: 0.03673; }
+    opacity: 0.00868; }
   70% {
-    opacity: 0.04692; }
+    opacity: 0.01933; }
   75% {
-    opacity: 0.0092; }
+    opacity: 0.03289; }
   80% {
-    opacity: 0.02103; }
+    opacity: 0.02771; }
   85% {
-    opacity: 0.01788; }
+    opacity: 0.02971; }
   90% {
-    opacity: 0.04315; }
+    opacity: 0.01558; }
   95% {
-    opacity: 0.04413; }
+    opacity: 0.01837; }
   100% {
-    opacity: 0.01042; } }
+    opacity: 0.04839; } }
 
-.blackScreen {
+#blackScreen {
   background-color: black;
   position: fixed;
   z-index: 99;
@@ -73,7 +73,7 @@
   animation-timing-function: linear;
   animation-fill-mode: both; }
 
-.flicker {
+#flicker {
   background-color: black;
   position: fixed;
   z-index: 100;
@@ -85,7 +85,7 @@
   pointer-events: none;
   animation: flicker 0.15s infinite; }
 
-.whiteScreen {
+#whiteScreen {
   background-color: white;
   position: fixed;
   z-index: 100;

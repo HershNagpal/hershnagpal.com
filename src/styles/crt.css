@@ -148,7 +148,7 @@
 
 
 
-.crt {
+#crt {
   content: " ";
   display: block;
   position: absolute;
