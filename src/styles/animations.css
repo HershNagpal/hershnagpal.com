@@ -1,61 +1,61 @@
 @keyframes blackScreenStartup {
   0% {
-    opacity: 100%; }
+    opacity: 1; }
   100% {
-    opacity: 0%; } }
+    opacity: 0; } }
 
 @keyframes whiteScreenStartup {
   50% {
     transform: scale(300, 0.001); }
   60% {
-    opacity: 100%; }
+    opacity: 1; }
   100% {
     transform: scale(300, 300);
-    opacity: 0%; } }
+    opacity: 0; } }
 
 @keyframes flicker {
   0% {
-    opacity: 0.02873; }
+    opacity: 0.02956; }
   5% {
-    opacity: 0.0452; }
+    opacity: 0.0102; }
   10% {
-    opacity: 0.0138; }
+    opacity: 0.04059; }
   15% {
-    opacity: 0.03314; }
+    opacity: 0.02501; }
   20% {
-    opacity: 0.02626; }
+    opacity: 0.0037; }
   25% {
-    opacity: 0.01401; }
+    opacity: 0.03677; }
   30% {
-    opacity: 0.01074; }
+    opacity: 0.01363; }
   35% {
-    opacity: 0.00565; }
+    opacity: 0.02132; }
   40% {
-    opacity: 0.0134; }
+    opacity: 0.03541; }
   45% {
-    opacity: 0.00137; }
+    opacity: 0.03955; }
   50% {
-    opacity: 0.04958; }
+    opacity: 0.01696; }
   55% {
-    opacity: 0.00073; }
+    opacity: 0.01162; }
   60% {
-    opacity: 0.03004; }
+    opacity: 0.02678; }
   65% {
-    opacity: 0.00868; }
+    opacity: 0.03648; }
   70% {
-    opacity: 0.01933; }
+    opacity: 0.03706; }
   75% {
-    opacity: 0.03289; }
+    opacity: 0.01466; }
   80% {
-    opacity: 0.02771; }
+    opacity: 0.04803; }
   85% {
-    opacity: 0.02971; }
+    opacity: 0.00019; }
   90% {
-    opacity: 0.01558; }
+    opacity: 0.04272; }
   95% {
-    opacity: 0.01837; }
+    opacity: 0.00114; }
   100% {
-    opacity: 0.04839; } }
+    opacity: 0.02855; } }
 
 #blackScreen {
   background-color: black;
@@ -65,7 +65,6 @@
   width: 100%;
   top: 0px;
   left: 0px;
-  opacity: 100%;
   pointer-events: none;
   animation: blackScreenStartup;
   animation-delay: 1s;
@@ -81,7 +80,6 @@
   width: 100%;
   top: 0px;
   left: 0px;
-  opacity: 100%;
   pointer-events: none;
   animation: flicker 0.15s infinite; }
 
@@ -93,7 +91,6 @@
   width: 1%;
   top: 50%;
   left: 50%;
-  opacity: 100%;
   pointer-events: none;
   animation: whiteScreenStartup;
   animation-duration: 0.5s;
