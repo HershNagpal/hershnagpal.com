@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/content.css"
 
-export const Projects = ({}) => {
+export const Projects = () => {
     return (
         <div className="text">
             <h3>This Website</h3>

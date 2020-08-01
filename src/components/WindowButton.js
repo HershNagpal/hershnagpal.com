@@ -1,7 +1,6 @@
-import ReactDOM from 'react'
 import React from 'react'
 
-export const WindowButton = ({type, updateTaskbar, taskbarState, id, windowState, updateWindowState}) => {
+export const WindowButton = ({type, updateTaskbar, taskbarState, id}) => {
 
     const handleClick = () => {
         switch (type) {
@@ -44,18 +43,18 @@ export const WindowButton = ({type, updateTaskbar, taskbarState, id, windowState
         // console.log(domNode.getBoundingClientRect())
     }
 
-    const buttonTypeText = () => {
-        switch (type) {
-            case "close":
-                return "×"
-            case "minimize":
-                return "_"
-            case "maximize":
-                return "□"
-            default:
-                return "x"
-        }
-    }
+    // const buttonTypeText = () => {
+    //     switch (type) {
+    //         case "close":
+    //             return "×"
+    //         case "minimize":
+    //             return "_"
+    //         case "maximize":
+    //             return "□"
+    //         default:
+    //             return "x"
+    //     }
+    // }
 
     return (
         <div className="buttonContainer">

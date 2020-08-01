@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/content.css"
 
-export const WelcomeMessage = ({}) => {
+export const WelcomeMessage = () => {
     return (
         <div className="text">
             <h3>Welcome</h3>

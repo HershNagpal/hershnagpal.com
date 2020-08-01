@@ -1,8 +1,8 @@
 import txtImage from './assets/images/icons/text.svg'
 import pdfImage from './assets/images/icons/pdf.svg'
 import linkImage from './assets/images/icons/link.svg'
-import folderImage from './assets/images/icons/folder.svg'
-import aboutImage from './assets/images/icons/about.png'
+// import folderImage from './assets/images/icons/folder.svg'
+// import aboutImage from './assets/images/icons/about.png'
 import resume from './assets/content/HNagpal-Resume.pdf'
 
 export const iconData = [

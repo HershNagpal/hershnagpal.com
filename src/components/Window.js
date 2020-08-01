@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/window.css'
 import {iconData, findImageSource} from '../iconData'
 import {WindowButton} from './WindowButton'
-import {MenuBar} from './MenuBar'
+// import {MenuBar} from './MenuBar'
 import {isWindowOpen} from '../taskbarState'
 import {WelcomeMessage} from './WelcomeMessage'
 import Draggable from 'react-draggable'
@@ -33,7 +33,7 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
             >
                 <div className="row">
                     <div className="column left">
-                        <img className="window-image" src={findImageSource(id)}/>
+                        <img className="window-image" src={findImageSource(id)} alt=""/>
                     </div>
                     <div className="column middle">
                         <p className="title">{iconData[id].title}</p>

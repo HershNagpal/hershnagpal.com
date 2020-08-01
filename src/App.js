@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       
       <div className="crt"/>
-      <img src={background} className="backgroundImage"/>
+      <img src={background} alt="" className="backgroundImage"/>
       <div className="blackScreen"></div>
       <div className="flicker"></div>
       <div className="whiteScreen"/>
