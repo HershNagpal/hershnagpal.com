@@ -26,7 +26,7 @@
   $steps:20;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-      opacity:random()*0.07;
+      opacity:random()*0.05;
     }
   }
 }
