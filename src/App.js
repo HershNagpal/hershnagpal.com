@@ -2,10 +2,10 @@ import React from 'react'
 import {Icon} from '../src/components/Icon'
 import {Taskbar} from './components/Taskbar'
 import {Window} from './components/Window'
+import {AnimationComponents} from './components/AnimationComponents'
 import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
 import {baseWindowState} from './windowState'
-import './styles/animations.css'
 import './styles/style.css'
 import './styles/crt.css'
 import './styles/style.css'
@@ -22,12 +22,10 @@ function App() {
 
   return (
     <div className="App">
-      
-      <div id="crt"/>
+
       <img src={background} alt="" className="backgroundImage"/>
-      <div id="blackScreen"/>
-      <div id="flicker"/>
-      <div id="whiteScreen"/>
+
+      <AnimationComponents/>
 
       {icons.map((icon, index) => (
         index===0 ? null : 

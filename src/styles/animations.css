@@ -1,61 +1,141 @@
-@keyframes blackScreenStartup {
-  0% {
+@keyframes movingDistortion {
+  from {
+    transform: translateY(-10vh); }
+  to {
+    transform: translateY(110vh); } }
+
+@keyframes fadeOut {
+  from {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0; } }
 
 @keyframes whiteScreenStartup {
-  50% {
-    transform: scale(300, 0.001); }
-  60% {
+  40% {
+    transform: scaleX(100);
     opacity: 1; }
+  80% {
+    transform: scale(100, 200); }
   100% {
-    transform: scale(300, 300);
-    opacity: 0; } }
+    opacity: 0;
+    transform: scale(100, 200); } }
 
 @keyframes flicker {
   0% {
-    opacity: 0.02956; }
-  5% {
-    opacity: 0.0102; }
+    opacity: 0.03491; }
   10% {
-    opacity: 0.04059; }
-  15% {
-    opacity: 0.02501; }
+    opacity: 0.02378; }
   20% {
-    opacity: 0.0037; }
-  25% {
-    opacity: 0.03677; }
+    opacity: 0.02054; }
   30% {
-    opacity: 0.01363; }
-  35% {
-    opacity: 0.02132; }
+    opacity: 0.00684; }
   40% {
-    opacity: 0.03541; }
-  45% {
-    opacity: 0.03955; }
+    opacity: 0.03493; }
   50% {
-    opacity: 0.01696; }
-  55% {
-    opacity: 0.01162; }
+    opacity: 0.03423; }
   60% {
-    opacity: 0.02678; }
-  65% {
-    opacity: 0.03648; }
+    opacity: 0.02221; }
   70% {
-    opacity: 0.03706; }
-  75% {
-    opacity: 0.01466; }
+    opacity: 0.03899; }
   80% {
-    opacity: 0.04803; }
-  85% {
-    opacity: 0.00019; }
+    opacity: 0.00256; }
   90% {
-    opacity: 0.04272; }
-  95% {
-    opacity: 0.00114; }
+    opacity: 0.00864; }
   100% {
-    opacity: 0.02855; } }
+    opacity: 0.01418; } }
+
+@keyframes noise {
+  0% {
+    transform: translate(44px, 14px); }
+  25% {
+    transform: translate(47px, 40px); }
+  50% {
+    transform: translate(8px, 37px); }
+  75% {
+    transform: translate(61px, 42px); }
+  100% {
+    transform: translate(47px, 96px); } }
+
+#inputText {
+  filter: blur(0.5px);
+  position: fixed;
+  color: white;
+  font-family: "vcr";
+  z-index: 100;
+  font-size: 50px;
+  top: 10%;
+  left: 10%;
+  pointer-events: none;
+  animation: fadeOut 2s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both; }
+
+#distortion {
+  background-color: black;
+  position: fixed;
+  z-index: 98;
+  height: 5%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0.05;
+  filter: blur(4px);
+  pointer-events: none;
+  animation: distortion 1s infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both; }
+
+#movingDistortion {
+  background-color: white;
+  position: fixed;
+  z-index: 98;
+  height: 5%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0.1;
+  filter: blur(4px);
+  pointer-events: none;
+  animation: movingDistortion 15s infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both; }
+
+.fadeOut {
+  animation: fadeOut 5s;
+  animation-timing-function: linear; }
+
+#noise {
+  background: transparent;
+  background-image: url(https://www.dropbox.com/s/h7ab1c82ctzy83n/noise.png?raw=1);
+  position: fixed;
+  z-index: 99;
+  opacity: 0.1;
+  top: -100px;
+  right: -100px;
+  bottom: -100px;
+  left: -100px;
+  pointer-events: none;
+  animation: noise 0.2s infinite;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: both; }
+
+#quickMovingDistortion {
+  background-color: white;
+  position: fixed;
+  z-index: 101;
+  height: 10%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+  filter: blur(4px);
+  pointer-events: none;
+  animation: movingDistortion 0.15s 15;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: both; }
 
 #blackScreen {
   background-color: black;
@@ -66,22 +146,22 @@
   top: 0px;
   left: 0px;
   pointer-events: none;
-  animation: blackScreenStartup;
-  animation-delay: 1s;
-  animation-duration: 3s;
+  animation: fadeOut 5s;
+  animation-delay: 2s;
   animation-timing-function: linear;
   animation-fill-mode: both; }
 
 #flicker {
   background-color: black;
   position: fixed;
-  z-index: 100;
+  z-index: 99;
   height: 100%;
   width: 100%;
   top: 0px;
   left: 0px;
   pointer-events: none;
-  animation: flicker 0.15s infinite; }
+  animation: flicker 0.15s infinite;
+  animation-delay: 3s; }
 
 #whiteScreen {
   background-color: white;

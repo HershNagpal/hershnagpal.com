@@ -37,4 +37,5 @@
   min-width: 900px;
   min-height: 1000px;
   z-index: -1;
+  filter: blur(1px);
 }

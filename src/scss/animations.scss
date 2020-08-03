@@ -1,34 +1,139 @@
-@keyframes blackScreenStartup {
-    0% { 
+@keyframes movingDistortion {
+    from {
+        transform: translateY(-10vh);
+    }
+    to {
+        transform: translateY(110vh);
+    }
+}
+
+@keyframes fadeOut {
+    from {
         opacity: 1;
     }
-    100% {
+    to {
         opacity: 0;
     }
 }
 
 @keyframes whiteScreenStartup {
-    50% {
-        transform: scale(300, 0.001);
-        // opacity: 100%;
-    }
-    60% {
+    40% {
+        transform: scaleX(100);
         opacity: 1;
     }
+    80% {
+        transform: scale(100, 200);
+        
+    }
     100% {
-        transform: scale(300, 300);
-        // transform: scale(301);
         opacity: 0;
+        transform: scale(100, 200);
     }
 }
 
 @keyframes flicker{
-  $steps:20;
+  $steps:10;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
       opacity:random()*0.05;
     }
   }
+}
+
+@keyframes noise{
+    $steps:4;
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        transform: translate(random(100)+px, random(100)+px);
+      }
+    }
+  }
+
+#inputText {
+    filter: blur(0.5px);
+    position: fixed;
+    color: white;
+    font-family: "vcr";
+    z-index: 100;
+    font-size: 50px;
+    top: 10%;
+    left: 10%;
+    pointer-events: none;
+    animation: fadeOut 2s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+#distortion {
+    background-color: black;
+    position: fixed;
+    z-index: 98;
+    height: 5%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.05;
+    filter: blur(4px);
+    pointer-events: none;
+    animation: distortion 1s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+#movingDistortion {
+    background-color: white;
+    position: fixed;
+    z-index: 98;
+    height: 5%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.1;
+    filter: blur(4px);
+    pointer-events: none;
+    animation: movingDistortion 15s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+.fadeOut {
+    animation: fadeOut 5s;
+    animation-timing-function: linear;
+}
+
+#noise {
+    background: transparent;
+    background-image: url(https://www.dropbox.com/s/h7ab1c82ctzy83n/noise.png?raw=1);
+    position: fixed;
+    z-index: 99;
+    opacity: 0.1;
+    top: -100px;
+    right: -100px;
+    bottom: -100px;
+    left: -100px;
+    pointer-events: none;
+    animation: noise 0.2s infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both
+}
+
+#quickMovingDistortion {
+    background-color: white;
+    position: fixed;
+    z-index: 101;
+    height: 10%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    filter: blur(4px);
+    pointer-events: none;
+    animation: movingDistortion 0.15s 15;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
 }
   
 #blackScreen {
@@ -39,11 +144,9 @@
     width: 100%;
     top: 0px;
     left: 0px;
-    // opacity: 100%;
     pointer-events: none;
-    animation: blackScreenStartup;
-    animation-delay: 1s;
-    animation-duration: 3s;
+    animation: fadeOut 5s;
+    animation-delay: 2s;
     animation-timing-function: linear;
     animation-fill-mode: both;
 }
@@ -51,7 +154,7 @@
 #flicker {
     background-color: black;
     position: fixed;
-    z-index: 100;
+    z-index: 99;
     height: 100%;
     width: 100%;
     top: 0px;
@@ -59,6 +162,7 @@
     // opacity: 100%;
     pointer-events: none;
     animation: flicker 0.15s infinite;
+    animation-delay: 3s;
 }
 
 #whiteScreen {
@@ -69,7 +173,6 @@
     width: 1%;
     top: 50%;
     left: 50%;
-    // opacity: 100%;
     pointer-events: none;
     animation: whiteScreenStartup;
     animation-duration: 0.5s;
