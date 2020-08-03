@@ -22,39 +22,39 @@
 
 @keyframes flicker {
   0% {
-    opacity: 0.03491; }
+    opacity: 0.0275; }
   10% {
-    opacity: 0.02378; }
+    opacity: 0.01735; }
   20% {
-    opacity: 0.02054; }
+    opacity: 0.01985; }
   30% {
-    opacity: 0.00684; }
+    opacity: 0.01337; }
   40% {
-    opacity: 0.03493; }
+    opacity: 0.01528; }
   50% {
-    opacity: 0.03423; }
+    opacity: 0.01508; }
   60% {
-    opacity: 0.02221; }
+    opacity: 0.04962; }
   70% {
-    opacity: 0.03899; }
+    opacity: 0.04148; }
   80% {
-    opacity: 0.00256; }
+    opacity: 0.04103; }
   90% {
-    opacity: 0.00864; }
+    opacity: 0.03145; }
   100% {
-    opacity: 0.01418; } }
+    opacity: 0.03179; } }
 
 @keyframes noise {
   0% {
-    transform: translate(44px, 14px); }
+    transform: translate(44px, 50px); }
   25% {
-    transform: translate(47px, 40px); }
+    transform: translate(82px, 61px); }
   50% {
-    transform: translate(8px, 37px); }
+    transform: translate(74px, 3px); }
   75% {
-    transform: translate(61px, 42px); }
+    transform: translate(10px, 62px); }
   100% {
-    transform: translate(47px, 96px); } }
+    transform: translate(6px, 79px); } }
 
 #inputText {
   filter: blur(0.5px);
@@ -110,7 +110,7 @@
   background-image: url(https://www.dropbox.com/s/h7ab1c82ctzy83n/noise.png?raw=1);
   position: fixed;
   z-index: 99;
-  opacity: 0.1;
+  opacity: 0.2;
   top: -100px;
   right: -100px;
   bottom: -100px;
@@ -129,10 +129,10 @@
   width: 100%;
   top: 0px;
   left: 0px;
-  opacity: 0.5;
+  opacity: 0.1;
   filter: blur(4px);
   pointer-events: none;
-  animation: movingDistortion 0.15s 15;
+  animation: movingDistortion 0.15s 7;
   animation-delay: 0.5s;
   animation-timing-function: linear;
   animation-fill-mode: both; }
@@ -146,8 +146,8 @@
   top: 0px;
   left: 0px;
   pointer-events: none;
-  animation: fadeOut 5s;
-  animation-delay: 2s;
+  animation: fadeOut 3s;
+  animation-delay: 1s;
   animation-timing-function: linear;
   animation-fill-mode: both; }
 

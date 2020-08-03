@@ -9,7 +9,7 @@ export const AnimationComponents = () => {
             <div id="quickMovingDistortion"/>
             <div id="crt"/>
             <div id="blackScreen"/>
-            <div id="flicker"/>
+            {/* <div id="flicker"/> */}
             <div id="whiteScreen"/>
             <div id="inputText">INPUT 1</div>
         </div>
