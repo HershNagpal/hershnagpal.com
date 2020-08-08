@@ -5,7 +5,10 @@ export const WelcomeMessage = () => {
     return (
         <div className="text">
             <h3>Welcome</h3>
-            <p>This is my website. It's still currently under construction.</p>
+            <p>
+                This is my website. It's currently under construction, but <br/>
+                I'm always working on new features and fancy animations. <br/>
+            </p>
             <h3>New and improved using React.js</h3>
             <p>Double click on any icon to get started.</p>
         </div>

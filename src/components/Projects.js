@@ -6,21 +6,28 @@ export const Projects = () => {
         <div className="text">
             <h3>This Website</h3>
             <p>
-                I grew up in the early 2000's when Windows XP was the dominant operating<br/>
-                system of choice in home computers. Our old Compaq monitor and nameless<br/>
-                PC left a lasting nostalgic impression on my life that I wouldn't tap into<br/>
-                again until I reached college.
+                Built using React and CSS. Hosted on AWS S3. <br/>
+                Pipeline hosted by AWS CodePipeline. <br/>
             </p>
+            <a href="https://github.com/HershNagpal/hershnagpal.com">On Github</a>
+
+            <h3>WebCheckers</h3>
             <p>
-                In my freshman year, I discovered my love for the feelings brought back by<br/>
-                the vaporwave style of art and music. Despite how abrasive (ugly) and abstract<br/>
-                (senseless) it looks, vaporwave style art feels like living in a fantasy world<br/>
-                of the retro technology I grew up with.               
+                Built using Java, Freemarker, and Maven. <br/>
             </p>
+            <a href="https://github.com/HershNagpal/webcheckers">On Github</a>
+
+            <h3>Library Management System</h3>
             <p>
-                This website is my way of sharing the nostalgia with you. Built with React.js,<br/>
-                hosted on AWS.
+                Built using Java, Freemarker, and Maven. <br/>
             </p>
+            <a href="https://github.com/HershNagpal/lbms">On Github</a>
+
+            <h3>The Movie Database</h3>
+            <p>
+                Built Swift for iOS. <br/>
+            </p>
+            <a href="https://github.com/HershNagpal/waymovies">On Github</a>
         </div>
     )
 }
