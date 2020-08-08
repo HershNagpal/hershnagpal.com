@@ -107,7 +107,7 @@
     background-image: url(https://www.dropbox.com/s/h7ab1c82ctzy83n/noise.png?raw=1);
     position: fixed;
     z-index: 99;
-    opacity: 0.1;
+    opacity: 0.2;
     top: -100px;
     right: -100px;
     bottom: -100px;
@@ -127,10 +127,10 @@
     width: 100%;
     top: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.1;
     filter: blur(4px);
     pointer-events: none;
-    animation: movingDistortion 0.15s 15;
+    animation: movingDistortion 0.15s 7;
     animation-delay: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: both;
@@ -145,8 +145,8 @@
     top: 0px;
     left: 0px;
     pointer-events: none;
-    animation: fadeOut 5s;
-    animation-delay: 2s;
+    animation: fadeOut 3s;
+    animation-delay: 1s;
     animation-timing-function: linear;
     animation-fill-mode: both;
 }
