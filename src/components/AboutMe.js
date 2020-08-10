@@ -8,8 +8,8 @@ export const AboutMe = () => {
             <p>
                 The engineer is the gallbladder of their team. No one really understands it's <br/>
                 function. It's a humble and hardworking organ that's not very glamorous to <br/>
-                think about. You could probably live without it but it makes your life easier <br/>
-                behind the scenes. <br/>
+                think about. You could probably live without it but it definitely makes your <br/>
+                life easier behind the scenes. <br/>
             </p>
             <p>
                 I'm an artist and software engineering student. I have been a gallbladder for <br/>

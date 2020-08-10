@@ -25,7 +25,7 @@ export const Projects = () => {
 
             <h3>The Movie Database</h3>
             <p>
-                Built Swift for iOS. <br/>
+                Built using Swift for iOS. <br/>
             </p>
             <a href="https://github.com/HershNagpal/waymovies">On Github</a>
         </div>
