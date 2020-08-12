@@ -26,10 +26,16 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
         }
     }
 
+    const handleClick = () => {
+        
+    }
+
     return (
         <Draggable>
             <div 
                 className="window"
+                onClick={() => handleClick()}
+                
             >
                 <div className="row">
                     <div className="column left">

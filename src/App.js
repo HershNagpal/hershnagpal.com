@@ -8,7 +8,6 @@ import {baseTaskbarState} from './taskbarState'
 import {baseWindowState} from './windowState'
 import './styles/style.css'
 import './styles/crt.css'
-import './styles/style.css'
 import background from './assets/images/blisscompress.jpg'
 
 function App() {
