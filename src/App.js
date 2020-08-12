@@ -18,8 +18,6 @@ function App() {
   const [startMenuState, toggleStartMenu] = React.useState(false)
   const [windowState, updateWindowState] = React.useState(baseWindowState)
 
-  console.log("yee")
-
   return (
     <div className="App">
 
