@@ -6,7 +6,7 @@ export const AboutMe = () => {
         <div className="text">
             <h3>Hersh Nagpal</h3>
             <p>
-                The engineer is the gallbladder of their team. No one really understands it's <br/>
+                The engineer is the gallbladder of their team. No one really understands its <br/>
                 function. It's a humble and hardworking organ that's not very glamorous to <br/>
                 think about. You could probably live without it but it definitely makes your <br/>
                 life easier behind the scenes. <br/>
