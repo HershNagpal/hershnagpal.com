@@ -31,7 +31,7 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
     }
 
     return (
-        <Draggable>
+        <Draggable handle=".row">
             <div 
                 className="window"
                 onClick={() => handleClick()}
