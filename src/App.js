@@ -7,7 +7,6 @@ import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
 import {baseWindowState} from './windowState'
 import './styles/style.css'
-import './styles/crt.css'
 import background from './assets/images/blisscompress.jpg'
 
 function App() {
@@ -20,7 +19,8 @@ function App() {
   return (
     <div className="App">
 
-      <img src={background} alt="" className="backgroundImage"/>
+      {/* <img src={background} alt="" className="backgroundImage"/> */}
+      <img className="backgroundImage"/>
 
       <AnimationComponents/>
 
