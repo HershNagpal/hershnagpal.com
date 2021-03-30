@@ -11,10 +11,10 @@
     opacity: 0; } }
 
 @keyframes whiteScreenStartup {
-  40% {
+  20% {
     transform: scaleX(100);
     opacity: 1; }
-  80% {
+  60% {
     transform: scale(100, 200); }
   100% {
     opacity: 0;
@@ -22,39 +22,39 @@
 
 @keyframes flicker {
   0% {
-    opacity: 0.0275; }
+    opacity: 0.01084; }
   10% {
-    opacity: 0.01735; }
+    opacity: 0.00201; }
   20% {
-    opacity: 0.01985; }
+    opacity: 0.0081; }
   30% {
-    opacity: 0.01337; }
+    opacity: 0.00093; }
   40% {
-    opacity: 0.01528; }
+    opacity: 0.0491; }
   50% {
-    opacity: 0.01508; }
+    opacity: 0.04551; }
   60% {
-    opacity: 0.04962; }
+    opacity: 0.0392; }
   70% {
-    opacity: 0.04148; }
+    opacity: 0.00215; }
   80% {
-    opacity: 0.04103; }
+    opacity: 0.01538; }
   90% {
-    opacity: 0.03145; }
+    opacity: 0.01973; }
   100% {
-    opacity: 0.03179; } }
+    opacity: 0.02427; } }
 
 @keyframes noise {
   0% {
-    transform: translate(44px, 50px); }
+    transform: translate(20px, 56px); }
   25% {
-    transform: translate(82px, 61px); }
+    transform: translate(28px, 27px); }
   50% {
-    transform: translate(74px, 3px); }
+    transform: translate(69px, 93px); }
   75% {
-    transform: translate(10px, 62px); }
+    transform: translate(52px, 71px); }
   100% {
-    transform: translate(6px, 79px); } }
+    transform: translate(86px, 72px); } }
 
 #inputText {
   filter: blur(0.5px);
