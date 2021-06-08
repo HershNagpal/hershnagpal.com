@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/window.css'
 import {iconData, findImageSource} from '../iconData'
 import {WindowButton} from './WindowButton'
-// import {MenuBar} from './MenuBar'
+import {MenuBar} from './MenuBar'
 import {isWindowOpen} from '../taskbarState'
 import {WelcomeMessage} from './WelcomeMessage'
 import Draggable from 'react-draggable'
@@ -74,7 +74,7 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
                     </div>
                 </div>
                 <div className="">
-                    {/* <MenuBar className="menuBar" type={"txt"}/> */}
+                    <MenuBar className="menuBar" type={"txt"}/>
                 </div>
                 <div className="content-box">
                     {popupType()}

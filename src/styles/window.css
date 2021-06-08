@@ -10,13 +10,15 @@
     border-width: 3px;
     border-style: solid;
     top:10%;
-    left:25%;
+    left:15%;
     z-index: 10;
     display: inline-block;
     resize: both;
+    width: auto;
     max-width: 80%;
     min-width: 280px;
     min-height: 100px;
+    border-radius: 10px;
 }
 
 .buttons {
@@ -30,6 +32,7 @@
     font-size: 25px;
     color: white;
     display: inline-block;
+    user-select: none;
 }
 
 .content-box {

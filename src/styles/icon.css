@@ -24,6 +24,7 @@
   overflow: hidden;
   width: 100%;
   text-align: center;
+  user-select: none;
   text-shadow:
     -1px -1px 0 #000,
      1px -1px 0 #000,

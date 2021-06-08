@@ -6,7 +6,7 @@ export const WelcomeMessage = () => {
         <div className="text">
             <h3>Welcome</h3>
             <p>
-                This is my website. It's currently under construction, but <br/>
+                This is my website. It's currently under construction, but
                 I'm always working on new features and fancy animations. <br/>
             </p>
             <h3>New and improved using React.js</h3>

@@ -6,6 +6,7 @@
     width: 134px;
     margin-left: 24px;
     padding-left: 20px;
+    user-select: none;
 }
 
 #startMenu {
@@ -30,6 +31,7 @@
     bottom: 0px;
     font-family: "vt323";
     font-size: 44px;
+    user-select: none;
 }
 
 #startMenu .menuItem:hover {
