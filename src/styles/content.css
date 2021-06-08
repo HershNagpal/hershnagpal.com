@@ -12,6 +12,7 @@
 .text {
     background-color: white;
     padding: 5px;
+    /* resize: unset; */
     overflow-x: auto;
     overflow-y: scroll;
     border-top: inset 3px black;

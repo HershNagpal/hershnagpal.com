@@ -2,14 +2,15 @@
     height: 45px;
     padding-top: 3px;
     /* background-color: #1B0400; */
-    background: #2e5fbb;
+    /* background: #2e5fbb; */
+    background-color: rgba(103, 46, 209, 0.5);
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
     border-top: ridge 2px white;
     z-index: 50; 
-    overflow: visible; 
+    overflow: visible;
   }
 
 .taskbar:after {

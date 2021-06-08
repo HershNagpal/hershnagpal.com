@@ -12,7 +12,8 @@
 #startMenu {
     top: -197px;
     left: 2px;
-    background-color: #2e5fbb;
+    /* background-color: #2e5fbb; */
+    background-color: rgba(103, 46, 209, 0.3);
     position: absolute;
     display: block;
     border-top: ridge 3px white;
@@ -24,7 +25,8 @@
 }
 
 #left {
-    background-color: #19366b;
+    /* background-color: #19366b; */
+    background-color: rgb(5, 5, 5);
     width: 34px;
     position: absolute;
     top: 0px;

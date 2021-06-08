@@ -2,7 +2,9 @@
     position: absolute;
     padding: 3px;
     /* background: #1b0400; */
-    background: #2e5fbb;
+    /* background: #9a2ebb; */
+    background:linear-gradient(rgba(103, 46, 209, 0.5) 50%,transparent);
+    background-color: rgba(103, 46, 209, 0.3);
     border-bottom: #22375e;
     border-right: #22375e;
     border-top: white;
@@ -16,7 +18,8 @@
     resize: both;
     width: auto;
     max-width: 80%;
-    min-width: 280px;
+    min-width: 300px;
+    max-height: 90%;
     min-height: 100px;
     border-radius: 10px;
 }
