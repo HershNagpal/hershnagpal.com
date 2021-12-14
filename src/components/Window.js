@@ -74,7 +74,7 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
                     </div>
                 </div>
                 <div className="">
-                    <MenuBar className="menuBar" type={"txt"}/>
+                    {/* <MenuBar className="menuBar" type={"txt"}/> */}
                 </div>
                 <div className="content-box">
                     {popupType()}

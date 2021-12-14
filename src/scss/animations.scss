@@ -49,6 +49,25 @@
     }
   }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(-45deg, #f55221, #FF367F, #0012DB);
+    background-size: 400% 400%;
+    height: 100vh;
+}
+
 #inputText {
     filter: blur(0.5px);
     position: fixed;

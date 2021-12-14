@@ -22,39 +22,53 @@
 
 @keyframes flicker {
   0% {
-    opacity: 0.01084; }
+    opacity: 0.01949; }
   10% {
-    opacity: 0.00201; }
+    opacity: 0.01597; }
   20% {
-    opacity: 0.0081; }
+    opacity: 0.00713; }
   30% {
-    opacity: 0.00093; }
+    opacity: 0.01975; }
   40% {
-    opacity: 0.0491; }
+    opacity: 0.00182; }
   50% {
-    opacity: 0.04551; }
+    opacity: 0.01198; }
   60% {
-    opacity: 0.0392; }
+    opacity: 0.00279; }
   70% {
-    opacity: 0.00215; }
+    opacity: 0.0022; }
   80% {
-    opacity: 0.01538; }
+    opacity: 0.00556; }
   90% {
-    opacity: 0.01973; }
+    opacity: 0.04166; }
   100% {
-    opacity: 0.02427; } }
+    opacity: 0.00605; } }
 
 @keyframes noise {
   0% {
-    transform: translate(20px, 56px); }
+    transform: translate(52px, 73px); }
   25% {
-    transform: translate(28px, 27px); }
+    transform: translate(73px, 57px); }
   50% {
-    transform: translate(69px, 93px); }
+    transform: translate(28px, 80px); }
   75% {
-    transform: translate(52px, 71px); }
+    transform: translate(29px, 97px); }
   100% {
-    transform: translate(86px, 72px); } }
+    transform: translate(2px, 60px); } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+body {
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #f55221, #FF367F, #0012DB);
+  background-size: 400% 400%;
+  height: 100vh; }
 
 #inputText {
   filter: blur(0.5px);

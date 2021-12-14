@@ -20,7 +20,7 @@ function App() {
     <div className="App">
 
       {/* <img src={background} alt="" className="backgroundImage"/> */}
-      <img className="backgroundImage"/>
+      {/* <div id="movingGradient"/> */}
 
       <AnimationComponents/>
 
