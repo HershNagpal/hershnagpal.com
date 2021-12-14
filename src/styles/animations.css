@@ -20,41 +20,51 @@
     opacity: 0;
     transform: scale(100, 200); } }
 
+@keyframes shutdown {
+  20% {
+    opacity: 0;
+    transform: scale(100, 200); }
+  60% {
+    transform: scale(100, 200); }
+  100% {
+    transform: scaleX(100);
+    opacity: 1; } }
+
 @keyframes flicker {
   0% {
-    opacity: 0.01949; }
+    opacity: 0.03932; }
   10% {
-    opacity: 0.01597; }
+    opacity: 0.0217; }
   20% {
-    opacity: 0.00713; }
+    opacity: 0.01165; }
   30% {
-    opacity: 0.01975; }
+    opacity: 0.04241; }
   40% {
-    opacity: 0.00182; }
+    opacity: 0.02008; }
   50% {
-    opacity: 0.01198; }
+    opacity: 0.04048; }
   60% {
-    opacity: 0.00279; }
+    opacity: 0.04314; }
   70% {
-    opacity: 0.0022; }
+    opacity: 0.03145; }
   80% {
-    opacity: 0.00556; }
+    opacity: 0.02698; }
   90% {
-    opacity: 0.04166; }
+    opacity: 0.01489; }
   100% {
-    opacity: 0.00605; } }
+    opacity: 0.00492; } }
 
 @keyframes noise {
   0% {
-    transform: translate(52px, 73px); }
+    transform: translate(51px, 96px); }
   25% {
-    transform: translate(73px, 57px); }
+    transform: translate(55px, 13px); }
   50% {
-    transform: translate(28px, 80px); }
+    transform: translate(51px, 12px); }
   75% {
-    transform: translate(29px, 97px); }
+    transform: translate(42px, 96px); }
   100% {
-    transform: translate(2px, 60px); } }
+    transform: translate(23px, 8px); } }
 
 @keyframes gradient {
   0% {

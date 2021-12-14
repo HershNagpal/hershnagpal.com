@@ -6,39 +6,38 @@ import linkImage from './assets/images/icons/link.svg'
 import resume from './assets/content/HNagpal-Resume.pdf'
 
 export const iconData = [
-    null,
     {
-        id: 1,
+        id: 0,
         title: "welcome.txt",
         type: "text",
         content: "",
     },
     {
-        id: 2,
+        id: 1,
         title: "about me.txt",
         type: "txt",
         content: "",
     },
     {
-        id: 3,
+        id: 2,
         title: "projects.txt",
         type: "txt",
         content: "",
     },
     {
-        id: 4,
+        id: 3,
         title: "resume.pdf",
         type: "pdf",
         content: resume,
     },
     {
-        id: 5,
+        id: 4,
         title: "linkedin.com",
         type: "ie",
         content: "https://www.linkedin.com/in/hershnagpal/",
     },
     {
-        id: 6,
+        id: 5,
         title: "instagram.com",
         type: "ie",
         content: "https://www.instagram.com/wafer_wave/",
@@ -46,7 +45,6 @@ export const iconData = [
 ]
 
 const iconImageMap = [
-    null,
     txtImage,
     txtImage,
     txtImage,
