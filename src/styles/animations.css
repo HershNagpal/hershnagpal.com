@@ -32,39 +32,39 @@
 
 @keyframes flicker {
   0% {
-    opacity: 0.03932; }
+    opacity: 0.00675; }
   10% {
-    opacity: 0.0217; }
+    opacity: 0.0452; }
   20% {
-    opacity: 0.01165; }
+    opacity: 0.03994; }
   30% {
-    opacity: 0.04241; }
+    opacity: 0.01208; }
   40% {
-    opacity: 0.02008; }
+    opacity: 0.02066; }
   50% {
-    opacity: 0.04048; }
+    opacity: 0.02037; }
   60% {
-    opacity: 0.04314; }
+    opacity: 0.02792; }
   70% {
-    opacity: 0.03145; }
+    opacity: 0.00502; }
   80% {
-    opacity: 0.02698; }
+    opacity: 0.03884; }
   90% {
-    opacity: 0.01489; }
+    opacity: 0.01866; }
   100% {
-    opacity: 0.00492; } }
+    opacity: 0.03563; } }
 
 @keyframes noise {
   0% {
-    transform: translate(51px, 96px); }
+    transform: translate(66px, 89px); }
   25% {
-    transform: translate(55px, 13px); }
+    transform: translate(43px, 94px); }
   50% {
-    transform: translate(51px, 12px); }
+    transform: translate(16px, 52px); }
   75% {
-    transform: translate(42px, 96px); }
+    transform: translate(36px, 45px); }
   100% {
-    transform: translate(23px, 8px); } }
+    transform: translate(12px, 20px); } }
 
 @keyframes gradient {
   0% {
@@ -76,7 +76,7 @@
 
 body {
   animation: gradient 15s ease infinite;
-  background: linear-gradient(-45deg, #f55221, #FF367F, #0012DB);
+  background: linear-gradient(-45deg, #f55221, #f55221, #0012DB, #FF367F, #FF367F);
   background-size: 400% 400%;
   height: 100vh; }
 

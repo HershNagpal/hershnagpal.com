@@ -7,7 +7,6 @@ import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
 import {baseWindowState} from './windowState'
 import './styles/style.css'
-import background from './assets/images/blisscompress.jpg'
 
 function App() {
   const icons = iconData
