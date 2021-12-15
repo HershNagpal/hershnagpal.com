@@ -47,8 +47,9 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                     <div className="column right">
                         <div className="buttons">
                             {
-                                windowButtonState.map((button) => (
+                                windowButtonState.map((button, index) => (
                                     <WindowButton 
+                                        key={index}
                                         type={button.type}
                                         updateTaskbar={updateTaskbar}
                                         taskbarState={taskbarState}

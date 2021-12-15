@@ -1,5 +1,3 @@
-import { closeWindow, minimizeWindow } from '../taskbarState'
-
 const closeButton = "close"
 const minimizeButton = "minimize"
 const maximizeButton = "maximize"

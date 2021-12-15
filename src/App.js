@@ -15,14 +15,10 @@ function App() {
 
   return (
     <div className="App">
-
-      {/* <img src={background} alt="" className="backgroundImage"/> */}
-      {/* <div id="movingGradient"/> */}
-
+      
       <AnimationComponents/>
 
       {
-        // if (icons !== null) {}
         icons.map((icon, index) => (
             <Icon 
               key={index}
