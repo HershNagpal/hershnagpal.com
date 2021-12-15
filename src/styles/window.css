@@ -15,7 +15,7 @@
     left:15%;
     z-index: 10;
     display: inline-block;
-    resize: both;
+    /* resize: both; */
     width: auto;
     max-width: 80%;
     min-width: 300px;

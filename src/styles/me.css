@@ -1,0 +1,8 @@
+#me {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    height: 60%;
+    opacity: 0.3;
+    pointer-events: none;
+}

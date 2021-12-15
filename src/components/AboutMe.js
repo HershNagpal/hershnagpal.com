@@ -1,5 +1,7 @@
 import React from 'react'
-import "../styles/content.css"
+import { Me } from './Me'
+import '../styles/me.css'
+import '../styles/content.css'
 
 export const AboutMe = () => {
     return (
@@ -17,6 +19,7 @@ export const AboutMe = () => {
                 This website is my way of sharing my combination of nostalgic art style and 
                 love for engineering with you.<br/>
             </p>
+            <Me/>
         </div>
     )
 }
