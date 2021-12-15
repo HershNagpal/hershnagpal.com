@@ -32,9 +32,7 @@ export const focusWindow = (id, taskbarState) => {
 
 export const isWindowOpen = (id, taskbarState) => taskbarState.find((task) => task.id === id ).windowIsOpen
 
-export const closeWindow = (id, taskbarState) => {
-    return taskbarState.filter((task) => task.id !== id)
-}
+export const closeWindow = (id, taskbarState) => taskbarState.filter((task) => task.id !== id)
 
 export const minimizeWindow = (id, taskbarState) => {
     return taskbarState.map((task) => ( 
