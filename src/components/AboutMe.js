@@ -10,8 +10,8 @@ export const AboutMe = () => {
             <p>
                 The engineer is the gallbladder of their team. No one really understands its 
                 function. It's a humble and hardworking organ that's not very glamorous to 
-                think about. You could probably live without knowing anything about it, 
-                but it definitely makes your life easier behind the scenes. <br/>
+                think about. You could live without knowing anything about it, but it
+                definitely makes your life easier behind the scenes. <br/>
             </p>
             <p>
                 I'm an artist and software engineering student. I have been a gallbladder for 
