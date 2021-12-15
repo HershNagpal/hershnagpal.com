@@ -24,15 +24,17 @@ function App() {
 
       <AnimationComponents/>
 
-      {icons.map((icon, index) => (
-        index===0 ? null : 
-          <Icon 
-            key={index}
-            id={icon.id}
-            taskbarState={taskbarState}
-            updateTaskbar={updateTaskbar}
-          />
-      ))}
+      {
+        // if (icons !== null) {}
+        icons.map((icon, index) => (
+            <Icon 
+              key={index}
+              id={icon.id}
+              taskbarState={taskbarState}
+              updateTaskbar={updateTaskbar}
+            />
+        ))
+      }
       
       {taskbarState.map((task, index) => (
         <Window

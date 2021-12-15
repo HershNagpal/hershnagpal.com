@@ -1,14 +1,15 @@
 import React from 'react'
+import { closeWindow, minimizeWindow } from '../taskbarState'
 
 export const WindowButton = ({type, updateTaskbar, taskbarState, id}) => {
 
     const handleClick = () => {
         switch (type) {
             case "close":
-                closeWindow()
+                close()
                 break
             case "minimize":
-                minimizeWindow()
+                minimize()
                 break
             case "maximize":
                 return "□"
@@ -17,48 +18,21 @@ export const WindowButton = ({type, updateTaskbar, taskbarState, id}) => {
         }
     }
 
-    const closeWindow = () => {
+    const close = () => {
         updateTaskbar( 
-            taskbarState.filter((task) => task.id !== id)
+            closeWindow(id, taskbarState)
         )
-        saveWindowPosition()
     }
 
-    const minimizeWindow = () => {
+    const minimize = () => {
         updateTaskbar( 
-            taskbarState.map((task) => ( 
-                task.id === id ? { 
-                    id: task.id, 
-                    windowIsOpen: !task.windowIsOpen
-                } : task
-            ))
+            minimizeWindow (id, taskbarState)
         )
-        saveWindowPosition()
     }
-
-    const saveWindowPosition = () => {
-        // const domNode = ReactDOM.findDOMNode(this);
-        // domNode.getBoundingClientRect()
-        
-        // console.log(domNode.getBoundingClientRect())
-    }
-
-    // const buttonTypeText = () => {
-    //     switch (type) {
-    //         case "close":
-    //             return "×"
-    //         case "minimize":
-    //             return "_"
-    //         case "maximize":
-    //             return "□"
-    //         default:
-    //             return "x"
-    //     }
-    // }
 
     return (
         <div className="buttonContainer">
-            <button onClick={() => handleClick()} className={type}>{/*buttonTypeText()*/}</button>
+            <button onClick={() => handleClick()} className={type}>{}</button>
         </div>
     )
 }

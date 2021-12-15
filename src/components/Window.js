@@ -9,6 +9,7 @@ import Draggable from 'react-draggable'
 import {Resume} from './Resume'
 import {Projects} from './Projects'
 import {AboutMe} from './AboutMe'
+import {focusWindow} from '../taskbarState'
 
 export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWindowState}) => {
     if (!isWindowOpen(id, taskbarState)) return null
@@ -25,9 +26,9 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
                 return <WelcomeMessage/>
         }
     }
-
+    
     const handleClick = () => {
-        
+        // updateTaskbar(focusWindow(id, taskbarState))
     }
 
     return (
@@ -35,7 +36,6 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
             <div 
                 className="window"
                 onClick={() => handleClick()}
-                
             >
                 <div className="row">
                     <div className="column left">
@@ -74,7 +74,7 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
                     </div>
                 </div>
                 <div className="">
-                    {/* <MenuBar className="menuBar" type={"txt"}/> */}
+                    <MenuBar className="menuBar" type={"txt"}/>
                 </div>
                 <div className="content-box">
                     {popupType()}

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/icon.css'
 import {findImageSource, iconData} from '../iconData'
+import { openWindow } from '../taskbarState'
 
 
 export const Icon = ({id, taskbarState, updateTaskbar}) => {
@@ -9,36 +10,9 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
         if (iconData[id].type === "ie") openLink(iconData[id].content) 
         
         else {
-            const itemIndex = taskbarState.findIndex((task) => task.id === id)
-            const thisIconInTaskbar = (-1 !== itemIndex)
-    
-            if (!thisIconInTaskbar) {
-                updateTaskbar([...taskbarState,
-                    {
-                      id: id,
-                      windowIsOpen: "true",
-                    },
-                ])
-            }
-        }
-    }
-
-    const handleClick = () => {
-        const itemIndex = taskbarState.findIndex((task) => task.id === id)
-        const thisIconInTaskbar = (-1 !== itemIndex)
-        const windowIsOpen = thisIconInTaskbar ? taskbarState[itemIndex].windowIsOpen 
-            : false
-            
-        if (thisIconInTaskbar) {
-            if (!windowIsOpen){
-            updateTaskbar( 
-                taskbarState.map((task) => ( 
-                    task.id === id ? { 
-                        id: task.id, 
-                        windowIsOpen: true
-                    } : task
-                ))
-            )
+            const newWindow = openWindow(id, taskbarState)
+            if(newWindow !== undefined) {
+                updateTaskbar([...taskbarState, newWindow])
             }
         }
     }
@@ -52,7 +26,6 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
         <div 
             className="icon"
             onDoubleClick={() => handleDoubleClick()}
-            onClick={() => handleClick()}
         >
             <div className="center">
                 <img className="icon-image" alt="icon" src={findImageSource(id)}/>
