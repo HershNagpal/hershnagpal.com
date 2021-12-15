@@ -9,9 +9,9 @@ import Draggable from 'react-draggable'
 import {Resume} from './Resume'
 import {Projects} from './Projects'
 import {AboutMe} from './AboutMe'
-import {focusWindow} from '../taskbarState'
+import { windowButtonState } from './windowButtonState'
 
-export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWindowState}) => {
+export const Window = ({taskbarState, updateTaskbar, id}) => {
     if (!isWindowOpen(id, taskbarState)) return null
 
     const popupType = () => {
@@ -46,36 +46,20 @@ export const Window = ({taskbarState, updateTaskbar, id, windowState, updateWind
                     </div>
                     <div className="column right">
                         <div className="buttons">
-                            <WindowButton 
-                                type={"minimize"} 
-                                taskbarState={taskbarState} 
-                                updateTaskbar={updateTaskbar} 
-                                id={id}
-                                windowState={windowState}
-                                updateWindowState={updateWindowState}
-                            />
-                            <WindowButton 
-                                type={"maximize"} 
-                                taskbarState={taskbarState} 
-                                updateTaskbar={updateTaskbar} 
-                                id={id}
-                                windowState={windowState}
-                                updateWindowState={updateWindowState}
-                            />
-                            <WindowButton 
-                                type={"close"} 
-                                taskbarState={taskbarState} 
-                                updateTaskbar={updateTaskbar} 
-                                id={id}
-                                windowState={windowState}
-                                updateWindowState={updateWindowState}
-                            />
+                            {
+                                windowButtonState.map((button) => (
+                                    <WindowButton 
+                                        type={button.type}
+                                        updateTaskbar={updateTaskbar}
+                                        taskbarState={taskbarState}
+                                        id={id}
+                                    />
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
-                <div className="">
-                    <MenuBar className="menuBar" type={"txt"}/>
-                </div>
+                <MenuBar className="menuBar" type={"txt"}/>
                 <div className="content-box">
                     {popupType()}
                 </div>

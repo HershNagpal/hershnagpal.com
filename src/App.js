@@ -5,7 +5,6 @@ import {Window} from './components/Window'
 import {AnimationComponents} from './components/AnimationComponents'
 import {iconData} from './iconData'
 import {baseTaskbarState} from './taskbarState'
-import {baseWindowState} from './windowState'
 import './styles/style.css'
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
 
   const [taskbarState, updateTaskbar] = React.useState(baseTaskbarState)
   const [startMenuState, toggleStartMenu] = React.useState(false)
-  const [windowState, updateWindowState] = React.useState(baseWindowState)
 
   return (
     <div className="App">
@@ -41,8 +39,6 @@ function App() {
           id={task.id}
           taskbarState={taskbarState}
           updateTaskbar={updateTaskbar}
-          windowState={windowState}
-          updateWindowState={updateWindowState}
         />
       ))}
       
