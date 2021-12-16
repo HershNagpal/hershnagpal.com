@@ -13,11 +13,11 @@
     border-style: solid;
     top:10%;
     left:15%;
-    z-index: 10;
+    z-index: 3;
     display: inline-block;
     /* resize: both; */
-    width: auto;
-    max-width: 80%;
+    /* width: auto; */
+    max-width: 50%;
     min-width: 300px;
     max-height: 90%;
     min-height: 100px;
