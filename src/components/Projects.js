@@ -1,5 +1,5 @@
-import React from 'react'
-import "../styles/content.css"
+import React from 'react';
+import "../styles/content.css";
 
 export const Projects = () => {
     return (
@@ -41,5 +41,5 @@ export const Projects = () => {
             </p>
             <a href="https://github.com/HershNagpal/waymovies">On Github</a>
         </div>
-    )
-}
+    );
+};

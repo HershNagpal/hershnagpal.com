@@ -1,5 +1,5 @@
-import React from 'react'
-import "../styles/content.css"
+import React from 'react';
+import "../styles/content.css";
 
 export const WelcomeMessage = () => {
     return (
@@ -16,5 +16,5 @@ export const WelcomeMessage = () => {
                 Double click on any icon to get started. You can drag, close, and minimize windows too!
             </p>
         </div>
-    )
-}
+    );
+};

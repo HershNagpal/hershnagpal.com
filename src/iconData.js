@@ -1,9 +1,9 @@
-import txtImage from './assets/images/icons/text.svg'
-import pdfImage from './assets/images/icons/pdf.svg'
-import linkImage from './assets/images/icons/link.svg'
+import txtImage from './assets/images/icons/text.svg';
+import pdfImage from './assets/images/icons/pdf.svg';
+import linkImage from './assets/images/icons/link.svg';
 // import folderImage from './assets/images/icons/folder.svg'
 // import aboutImage from './assets/images/icons/about.png'
-import resume from './assets/content/HNagpal-Resume.pdf'
+import resume from './assets/content/HNagpal-Resume.pdf';
 
 export const iconData = [
     {
@@ -48,7 +48,7 @@ export const iconData = [
     //     type: "ie",
     //     content: "https://hershnagpal.github.io/carrot-client/",
     // },
-]
+];
 
 const iconImageMap = [
     txtImage,
@@ -58,6 +58,6 @@ const iconImageMap = [
     linkImage,
     linkImage,
     // linkImage,
-]
+];
 
-export const findImageSource = (id) => iconImageMap[id]
+export const findImageSource = (id) => iconImageMap[id];

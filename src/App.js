@@ -1,17 +1,17 @@
-import React from 'react'
-import {Icon} from '../src/components/Icon'
-import {Taskbar} from './components/Taskbar'
-import {Window} from './components/Window'
-import {AnimationComponents} from './components/AnimationComponents'
-import {iconData} from './iconData'
-import {baseTaskbarState} from './taskbarState'
-import './styles/style.css'
+import React from 'react';
+import {Icon} from '../src/components/Icon';
+import {Taskbar} from './components/Taskbar';
+import {Window} from './components/Window';
+import {AnimationComponents} from './components/AnimationComponents';
+import {iconData} from './iconData';
+import {baseTaskbarState} from './taskbarState';
+import './styles/style.css';
 
 function App() {
-  const icons = iconData
+  const icons = iconData;
 
-  const [taskbarState, updateTaskbar] = React.useState(baseTaskbarState)
-  const [startMenuState, toggleStartMenu] = React.useState(false)
+  const [taskbarState, updateTaskbar] = React.useState(baseTaskbarState);
+  const [startMenuState, toggleStartMenu] = React.useState(false);
 
   return (
     <div className="app">
@@ -45,7 +45,7 @@ function App() {
         startMenuState={startMenuState} 
       />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,18 +1,18 @@
-import React from 'react'
-import '../styles/window.css'
-import {iconData, findImageSource} from '../iconData'
-import {WindowButton} from './WindowButton'
-import {MenuBar} from './MenuBar'
-import {isWindowOpen, focusWindow} from '../taskbarState'
-import {WelcomeMessage} from './WelcomeMessage'
-import Draggable from 'react-draggable'
-import {Resume} from './Resume'
-import {Projects} from './Projects'
-import {AboutMe} from './AboutMe'
-import {windowButtonState} from './windowButtonState'
+import React from 'react';
+import '../styles/window.css';
+import {iconData, findImageSource} from '../iconData';
+import {WindowButton} from './WindowButton';
+import {MenuBar} from './MenuBar';
+import {isWindowOpen, focusWindow} from '../taskbarState';
+import {WelcomeMessage} from './WelcomeMessage';
+import Draggable from 'react-draggable';
+import {Resume} from './Resume';
+import {Projects} from './Projects';
+import {AboutMe} from './AboutMe';
+import {windowButtonState} from './windowButtonState';
 
 export const Window = ({taskbarState, updateTaskbar, id}) => {
-    if (!isWindowOpen(id, taskbarState)) return null
+    if (!isWindowOpen(id, taskbarState)) return null;
 
     const popupType = () => {
         switch (iconData[id].title) {
@@ -25,16 +25,16 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
             default:
                 return <WelcomeMessage/>
         }
-    }
+    };
     
     const handleClick = () => {
-        // updateTaskbar(focusWindow(id, taskbarState))
-    }
+        // updateTaskbar(focusWindow(id, taskbarState));
+    };
 
     const position = {
         left: ((id*3) + 7) + "%",
         top: ((id*3) + 7) + "%",
-    }
+    };
 
     return (
         <Draggable handle=".row" >
@@ -75,5 +75,5 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                 </div>
             </div>
         </Draggable>
-    )
-}
+    );
+};

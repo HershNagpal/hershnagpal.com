@@ -1,6 +1,6 @@
-const closeButton = "close"
-const minimizeButton = "minimize"
-const maximizeButton = "maximize"
+const closeButton = "close";
+const minimizeButton = "minimize";
+const maximizeButton = "maximize";
 
 export const windowButtonState = [
     {
@@ -11,4 +11,4 @@ export const windowButtonState = [
         type: closeButton,
         text: "x",
     },
-]
+];

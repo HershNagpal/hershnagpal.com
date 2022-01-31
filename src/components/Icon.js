@@ -1,7 +1,7 @@
-import React from 'react'
-import '../styles/icon.css'
-import {findImageSource, iconData} from '../iconData'
-import { openWindow } from '../taskbarState'
+import React from 'react';
+import '../styles/icon.css';
+import {findImageSource, iconData} from '../iconData';
+import { openWindow } from '../taskbarState';
 
 
 export const Icon = ({id, taskbarState, updateTaskbar}) => {
@@ -15,12 +15,12 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
                 updateTaskbar([...taskbarState, newWindow])
             }
         }
-    }
+    };
 
     const openLink = (link) => {
         var win = window.open(link, '_blank')
         win.focus()
-    }
+    };
 
     return (
         <div 
@@ -34,5 +34,5 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
                 <p className="icon-text glow" data-text={iconData[id].title}>{iconData[id].title}</p>
             </div>
         </div>
-    )      
-}
+    );
+};

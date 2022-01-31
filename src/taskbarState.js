@@ -5,9 +5,9 @@ export const baseTaskbarState = [
         focused: true,
     }
     
-]
+];
 
-const taskIsInTaskbar = (id, taskbarState) =>  (taskbarState.find((task) => task.id === id) === undefined)? false : true
+const taskIsInTaskbar = (id, taskbarState) =>  (taskbarState.find((task) => task.id === id) === undefined)? false : true;
 
 const unfocusAll = (taskbarState) => {
     return taskbarState.map((task) => ( 
@@ -17,7 +17,7 @@ const unfocusAll = (taskbarState) => {
             focused: false,
         } : task
     ))
-}
+};
 
 export const focusWindow = (id, taskbarState) => {
     const unfocusedState = unfocusAll(taskbarState)
@@ -28,11 +28,11 @@ export const focusWindow = (id, taskbarState) => {
             focused: true,
         } : task
     ))
-}
+};
 
-export const isWindowOpen = (id, taskbarState) => taskbarState.find((task) => task.id === id ).windowIsOpen
+export const isWindowOpen = (id, taskbarState) => taskbarState.find((task) => task.id === id ).windowIsOpen;
 
-export const closeWindow = (id, taskbarState) => taskbarState.filter((task) => task.id !== id)
+export const closeWindow = (id, taskbarState) => taskbarState.filter((task) => task.id !== id);
 
 export const minimizeWindow = (id, taskbarState) => {
     return taskbarState.map((task) => ( 
@@ -41,8 +41,8 @@ export const minimizeWindow = (id, taskbarState) => {
             windowIsOpen: !task.windowIsOpen,
             focused: false,
         } : task
-    ))
-}
+    ));
+};
 
 export const openWindow = (id, taskbarState) => {
     if (!taskIsInTaskbar(id, taskbarState)) {
@@ -50,9 +50,9 @@ export const openWindow = (id, taskbarState) => {
             id: id,
             windowIsOpen: true,
             focused: false,
-        }
+        };
     }
-}
+};
 
 export const toggleWindow = (id, taskbarState) => {
     // unfocusAll(taskbarState)
@@ -62,5 +62,5 @@ export const toggleWindow = (id, taskbarState) => {
             windowIsOpen: !task.windowIsOpen,
             focused: task.windowIsOpen? false: true,
         } : task
-    ))
-}
+    ));
+};

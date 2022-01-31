@@ -1,7 +1,7 @@
-import React from 'react'
-import { Me } from './Me'
-import '../styles/me.css'
-import '../styles/content.css'
+import React from 'react';
+import { Me } from './Me';
+import '../styles/me.css';
+import '../styles/content.css';
 
 export const AboutMe = () => {
     return (
@@ -21,5 +21,5 @@ export const AboutMe = () => {
             </p>
             <Me/>
         </div>
-    )
-}
+    );
+};

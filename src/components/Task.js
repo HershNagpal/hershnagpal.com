@@ -1,10 +1,10 @@
-import React from 'react'
-import '../styles/task.css'
-import {findImageSource, iconData} from '../iconData'
-import {isWindowOpen, toggleWindow} from '../taskbarState'
+import React from 'react';
+import '../styles/task.css';
+import {findImageSource, iconData} from '../iconData';
+import {isWindowOpen, toggleWindow} from '../taskbarState';
 
 export const Task = ({id, taskbarState, updateTaskbar}) => {
-    const handleClick = () => updateTaskbar(toggleWindow(id, taskbarState))
+    const handleClick = () => updateTaskbar(toggleWindow(id, taskbarState));
     
     return (
         <div
@@ -14,5 +14,5 @@ export const Task = ({id, taskbarState, updateTaskbar}) => {
             <img className="task-image" alt="icon" src={findImageSource(id)} />
             {iconData[id].title}
         </div>
-    )
-}
+    );
+};

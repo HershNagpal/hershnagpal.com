@@ -1,5 +1,5 @@
-import React from 'react'
-import "../styles/animations.css"
+import React from 'react';
+import "../styles/animations.css";
 
 export const AnimationComponents = () => {
     return (
@@ -13,5 +13,5 @@ export const AnimationComponents = () => {
             <div id="whiteScreen"/>
             <div id="inputText">INPUT 1</div>
         </div>
-    )
-}
+    );
+};

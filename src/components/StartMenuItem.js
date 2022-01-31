@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/startMenu.css'
+import React from 'react';
+import '../styles/startMenu.css';
 
 export const StartMenuItem = ({text, handleClick}) => {
     
@@ -7,5 +7,5 @@ export const StartMenuItem = ({text, handleClick}) => {
         <div className="menuItem" onClick={handleClick}>
             {text}
         </div>
-    )
-}
+    );
+};

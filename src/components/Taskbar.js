@@ -1,8 +1,8 @@
-import React from 'react'
-import {StartButton} from './StartButton'
-import '../styles/taskbar.css'
-import {Task} from './Task'
-import {StartMenu} from './StartMenu'
+import React from 'react';
+import {StartButton} from './StartButton';
+import '../styles/taskbar.css';
+import {Task} from './Task';
+import {StartMenu} from './StartMenu';
 
 export const Taskbar = ({updateTaskbar, taskbarState, startMenuState, toggleStartMenu}) => {
 
@@ -17,5 +17,5 @@ export const Taskbar = ({updateTaskbar, taskbarState, startMenuState, toggleStar
             ))}
             {startMenuState && <StartMenu/>}
         </div>
-    )
-}
+    );
+};
