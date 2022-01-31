@@ -31,11 +31,20 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
         // updateTaskbar(focusWindow(id, taskbarState))
     }
 
+    const position = {
+        left: ((id*3) + 7) + "%",
+        top: ((id*3) + 7) + "%",
+    }
+
     return (
-        <Draggable handle=".row">
+        <Draggable handle=".row" >
             <div 
                 className="window"
                 onClick={() => handleClick()}
+                style={{
+                    left: position.left,
+                    top: position.top,
+                }}
             >
                 <div className="row">
                     <div className="column left">

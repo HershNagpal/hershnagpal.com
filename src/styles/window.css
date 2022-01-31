@@ -9,8 +9,8 @@
     border-left: white;
     border-width: 3px;
     border-style: solid;
-    top:10%;
-    left:15%;
+    /* top:10%; */
+    /* left:15%; */
     z-index: 3;
     display: inline-block;
     /* resize: both; */
