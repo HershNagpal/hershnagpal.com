@@ -26,7 +26,7 @@ export const StartMenu = () => {
                 </div>
             </div>
             <StartMenuItem text={"Documents"} />
-            <StartMenuItem text={"Photos"} />
+            <StartMenuItem text={"Photos"} handleClick={photos}/>
             <StartMenuItem text={"Contact"} />
             <StartMenuItem text={"Find"} />
             <StartMenuItem text={"Help"} />
