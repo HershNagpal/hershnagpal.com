@@ -5,7 +5,7 @@ import '../styles/content.css'
 
 export const AboutMe = () => {
     return (
-        <div className="text">
+        <div className="text" id="aboutMe">
             <h3>Hersh Nagpal</h3>
             <p>
                 The engineer is the gallbladder of their team. No one really understands its 

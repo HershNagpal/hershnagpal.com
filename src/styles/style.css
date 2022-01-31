@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   overflow: hidden;
+  padding: 0px;
+  margin: 0px;
 }
 
 @font-face {
@@ -26,6 +28,11 @@
 @font-face {
   font-family: "vcr";
   src: url("../assets/fonts/VCR.ttf")
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
 }
 
 .backgroundImage {

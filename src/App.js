@@ -14,7 +14,7 @@ function App() {
   const [startMenuState, toggleStartMenu] = React.useState(false)
 
   return (
-    <div className="App">
+    <div className="app">
 
       <AnimationComponents/>
 

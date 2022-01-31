@@ -8,10 +8,6 @@ export const windowButtonState = [
         text: "□",
     },
     {
-        type: maximizeButton,
-        text: "-",
-    },
-    {
         type: closeButton,
         text: "x",
     },

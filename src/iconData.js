@@ -42,12 +42,12 @@ export const iconData = [
         type: "ie",
         content: "https://www.instagram.com/wafer_wave/",
     },    
-    {
-        id: 6,
-        title: "carrotwolf-alpha1",
-        type: "ie",
-        content: "https://hershnagpal.github.io/carrot-client/",
-    },
+    // {
+    //     id: 6,
+    //     title: "carrotwolf-alpha1",
+    //     type: "ie",
+    //     content: "https://hershnagpal.github.io/carrot-client/",
+    // },
 ]
 
 const iconImageMap = [
@@ -57,7 +57,7 @@ const iconImageMap = [
     pdfImage,
     linkImage,
     linkImage,
-    linkImage,
+    // linkImage,
 ]
 
 export const findImageSource = (id) => iconImageMap[id]

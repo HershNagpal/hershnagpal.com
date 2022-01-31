@@ -17,7 +17,7 @@ export const MenuBar = ({type}) => {
             {
                 menuBarTypeText(type).map((str, index) => {
                     return(
-                        <div className="menubar-item">{str}</div>
+                        <div key={index} className="menubar-item">{str}</div>
                     )
                 })
             }

@@ -1,8 +1,6 @@
 .window {
     position: absolute;
     padding: 3px;
-    /* background: #1b0400; */
-    /* background: #9a2ebb; */
     background:linear-gradient(rgba(103, 46, 209, 0.5) 50%,transparent);
     background-color: rgba(103, 46, 209, 0.3);
     border-bottom: #22375e;
@@ -17,9 +15,9 @@
     display: inline-block;
     /* resize: both; */
     /* width: auto; */
-    max-width: 50%;
+    max-width: 50vw;
     min-width: 300px;
-    max-height: 90%;
+    max-height: 70vh;
     min-height: 100px;
     border-radius: 10px;
 }
@@ -44,6 +42,11 @@
 
 .content-box {
     padding: 5px;
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    height: max-content;
+    overflow: scroll;
 }
 
 .window-image {
@@ -100,8 +103,6 @@ button {
     font-size: 16px;
     font-weight: bold;
     z-index: 15;
-    /* font-family: "ms-sans"; */
-    /* text-align: center; */
 }
 
 .close {

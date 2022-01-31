@@ -16,8 +16,8 @@ export const Projects = () => {
                 A roguelike game still in pre-alpha. <br/>
                 Built using functional React and MaterialUI. <br/>
             </p>
-            <a href="hershnagpal.github.io/carrot-client/">CarrotWolf Alpha</a>
-            <br/>
+            {/* <a href="hershnagpal.github.io/carrot-client/">CarrotWolf Alpha</a> */}
+            {/* <br/> */}
             <a href="https://github.com/HershNagpal/carrot-client">On Github</a>
 
             <h3>WebCheckers</h3>

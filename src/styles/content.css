@@ -10,11 +10,12 @@
 }
 
 .text {
+    position: relative;
+    display: block;
+    max-height: 50vh;
     background-color: white;
     padding: 5px;
-    resize: unset;
-    /* overflow-x: auto/; */
-    /* overflow-y: scroll; */
+    overflow: scroll;
     border-top: inset 3px black;
     border-left: inset 3px black;
     border-bottom: inset 3px white;
@@ -22,4 +23,16 @@
     border-radius: 0px 0px 0px 10px;
     font-family: 'fixedsys';
     font-size: 20px;
+}
+
+.text p {
+    margin: 10px;
+}
+
+.text h3 {
+    margin: 20px 10px 10px 10px;
+}
+
+.text a {
+    margin: 10px;
 }

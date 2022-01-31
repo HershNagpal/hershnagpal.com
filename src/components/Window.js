@@ -3,13 +3,13 @@ import '../styles/window.css'
 import {iconData, findImageSource} from '../iconData'
 import {WindowButton} from './WindowButton'
 import {MenuBar} from './MenuBar'
-import {isWindowOpen} from '../taskbarState'
+import {isWindowOpen, focusWindow} from '../taskbarState'
 import {WelcomeMessage} from './WelcomeMessage'
 import Draggable from 'react-draggable'
 import {Resume} from './Resume'
 import {Projects} from './Projects'
 import {AboutMe} from './AboutMe'
-import { windowButtonState } from './windowButtonState'
+import {windowButtonState} from './windowButtonState'
 
 export const Window = ({taskbarState, updateTaskbar, id}) => {
     if (!isWindowOpen(id, taskbarState)) return null
