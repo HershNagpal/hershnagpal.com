@@ -10,6 +10,7 @@ import {Resume} from './Resume';
 import {Projects} from './Projects';
 import {AboutMe} from './AboutMe';
 import {windowButtonState} from './windowButtonState';
+import { Folder } from './Folder';
 
 export const Window = ({taskbarState, updateTaskbar, id}) => {
     if (!isWindowOpen(id, taskbarState)) return null;
@@ -22,6 +23,8 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                 return <AboutMe/>
             case "projects.txt":
                 return <Projects/>
+            case "documents":
+                return <Folder type={"documents"} taskbarState={taskbarState} updateTaskbar={updateTaskbar}/>
             default:
                 return <WelcomeMessage/>
         }
@@ -69,7 +72,7 @@ export const Window = ({taskbarState, updateTaskbar, id}) => {
                         </div>
                     </div>
                 </div>
-                <MenuBar className="menuBar" type={"txt"}/>
+                {/* <MenuBar className="menuBar" type={"txt"}/> */}
                 <div className="content-box">
                     {popupType()}
                 </div>

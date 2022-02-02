@@ -5,6 +5,7 @@
   width: auto;
   text-align: center;
   vertical-align: top;
+  /* border: white dotted 0px; */
 }
 
 .icon-image {
@@ -33,3 +34,8 @@
      1px  1px 0 #000;
 }
 
+.clicked {
+  border: white dotted 1px;
+  padding: 9px;
+  height: 149px; 
+}

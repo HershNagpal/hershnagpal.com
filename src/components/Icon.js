@@ -5,6 +5,11 @@ import { openWindow } from '../taskbarState';
 
 
 export const Icon = ({id, taskbarState, updateTaskbar}) => {
+
+    const [clicked, changeClicked] = React.useState(false);
+
+    const classes = clicked ? "icon clicked" : "icon";
+    // const classes = "icon";
     
     const handleDoubleClick = () => {
         if (iconData[id].type === "ie") openLink(iconData[id].content) 
@@ -22,16 +27,21 @@ export const Icon = ({id, taskbarState, updateTaskbar}) => {
         win.focus()
     };
 
+    const handleClick = () => {
+        changeClicked(!clicked)
+    };
+
     return (
         <div 
-            className="icon"
+            className={classes}
+            onClick={() => handleClick()}
             onDoubleClick={() => handleDoubleClick()}
         >
             <div className="center">
                 <img className="icon-image" alt="icon" src={findImageSource(id)}/>
             </div>
             <div className="center">
-                <p className="icon-text glow" data-text={iconData[id].title}>{iconData[id].title}</p>
+                <p className="icon-text" data-text={iconData[id].title}>{iconData[id].title}</p>
             </div>
         </div>
     );

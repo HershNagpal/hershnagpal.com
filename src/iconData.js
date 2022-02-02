@@ -1,15 +1,14 @@
 import txtImage from './assets/images/icons/text.svg';
 import pdfImage from './assets/images/icons/pdf.svg';
 import linkImage from './assets/images/icons/link.svg';
-// import folderImage from './assets/images/icons/folder.svg'
-// import aboutImage from './assets/images/icons/about.png'
+import folderImage from './assets/images/icons/folder.svg'
 import resume from './assets/content/HNagpal-Resume.pdf';
 
 export const iconData = [
     {
         id: 0,
         title: "welcome.txt",
-        type: "text",
+        type: "txt",
         content: "",
     },
     {
@@ -44,9 +43,9 @@ export const iconData = [
     },    
     // {
     //     id: 6,
-    //     title: "carrotwolf-alpha1",
-    //     type: "ie",
-    //     content: "https://hershnagpal.github.io/carrot-client/",
+    //     title: "documents",
+    //     type: "folder",
+    //     content: "",
     // },
 ];
 
@@ -57,7 +56,7 @@ const iconImageMap = [
     pdfImage,
     linkImage,
     linkImage,
-    // linkImage,
+    // folderImage,
 ];
 
 export const findImageSource = (id) => iconImageMap[id];

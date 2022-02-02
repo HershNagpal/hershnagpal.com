@@ -4,7 +4,7 @@ import "../styles/animations.css";
 export const AnimationComponents = () => {
     return (
         <div>
-            <div id="noise"/>
+            {/* <div id="noise"/> */}
             <div id="movingDistortion"/>
             <div id="quickMovingDistortion"/>
             <div id="crt"/>
