@@ -1,4 +1,4 @@
-Hello! This is my personal website repository.
+## Now outdated. Check out my new site [here](https://github.com/HershNagpal/hershnagpal-portfolio)
 
 ## Available Scripts
 
